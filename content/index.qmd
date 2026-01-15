@@ -12,7 +12,7 @@ title: "About Me"
 
 ## Hi, I’m Kashish 👋
 
-I’m a **Statistics student at UBC** who likes working with data - cleaning it, analyzing it, building things with it, and occasionally wondering why it’s broken in the first place.
+I’m a **Statistics student at UBC Vancouver** who likes working with data - cleaning it, analyzing it, building things with it, and occasionally wondering why it’s broken in the first place.
 
 I’ve spent time across **data science, analytics, and data engineering**, working on projects in healthcare, government, and large companies. I enjoy figuring out how data moves from *raw and messy* to *useful and understandable*.
 
@@ -21,11 +21,3 @@ Right now, I mostly work with **Python and SQL**, and spend a lot of time around
 When I’m not working with data, I’m either at the pool, catching up on sleep, or convincing myself I’ll only watch one episode.
 
 ---
-
-### Quick Facts
-
-- 📍 Vancouver, Canada  
-- 🎓 BSc in Statistics @ UBC  
-- 🧠 GPA: 4.0 / 4.33  
-- 👨‍🏫 Stats TA  
-- 🍵 Tea enthusiast

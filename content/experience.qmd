@@ -1,34 +1,50 @@
----
-title: "Experience"
----
+## 🛠️ Professional Experience
 
-## Data Engineer Intern  
-**Population Data BC** — Vancouver, BC  
-*Sep 2025 – Present*
+::: {.grid}
 
-- Led migration from CSV-based ingestion to **Apache Parquet**, reducing researcher ingestion time by **60%**.
-- Integrated **Apache Arrow** to improve in-memory analytics and reduce query latency by **40%**.
-- Built reproducible **Python ETL pipelines** with unit tests, Makefiles, logging, and documentation.
-- Migrated legacy pipelines to a **modern Airflow-orchestrated architecture** using DuckDB.
+::: {.g-col-12 .g-col-md-6 .experience-card}
+### 🏥 Population Data BC
+**Data Engineer Intern** *Sept 2025 – Present*
 
----
+**The Mission:** Optimizing the bridge between massive provincial health datasets and academic research.
 
-## Data Engineer Intern  
-**Samsung Electronics** — Vancouver, BC  
-*Sep 2024 – Aug 2025*
+**Key Contributions:**
 
-- Deployed **CI/CD pipelines** via GitHub Actions for real-time PII tagging across **10+ streams** processing **500M+ records/day**.
-- Orchestrated cross-region data transfers for **200+ datasets** with **99% availability**.
-- Automated ETL workflows for **50+ Tableau dashboards** using Airflow.
-- Built **dbt pipelines** ingesting FastAPI-backed application data.
-- Performed large-scale **data quality analysis** on Redshift datasets (>20M records).
+* **Performance Engineering:** Transitioned to **Apache Parquet/Arrow**, slashing ingestion times by **60%**.
+* **Infrastructure:** Implemented **Airflow** + **DuckDB** for lightning-fast local processing.
+* **Reliability:** Built Python ETL pipelines with full unit testing and logging.
 
----
+**Stack:** `Python` `Airflow` `DuckDB` `Arrow` `Parquet`
+:::
 
-## Software Developer Intern  
-**Vancouver Coastal Health** — Vancouver, BC  
-*May 2024 – Aug 2024*
+::: {.g-col-12 .g-col-md-6 .experience-card}
+### 📱 Samsung R&D
+**Data Engineer Intern** *Sep 2024 – Aug 2025*
 
-- Developed an **R package** for ingestion-layer data validation using `testthat`.
-- Migrated ingestion from flat files to **SQLite-based storage**.
-- Maintained analytical pipelines supporting clinical informatics systems.
+**The Mission:** Managing global-scale data infrastructure and privacy compliance.
+
+**Key Contributions:**
+
+* **Scale:** Managed real-time processing of **500M+ records/day** with automated PII tagging.
+* **Reliability:** Maintained **99% availability** for cross-region transfers of 200+ datasets.
+* **Analytics:** Used **dbt** to automate workflows for 50+ executive dashboards.
+
+**Stack:** `AWS Redshift` `dbt` `Airflow` `GitHub Actions` `Tableau`
+:::
+
+::: {.g-col-12 .experience-card}
+### 💉 Vancouver Coastal Health
+**Software Developer Intern** *May 2024 – Aug 2024*
+
+**The Mission:** Enhancing data integrity for clinical informatics systems.
+
+**Key Contributions:**
+
+* **Validation:** Developed an **R package** (`testthat`) to enforce data quality at ingestion.
+* **Storage:** Migrated clinical records from flat files to **SQLite** for faster retrieval.
+* **Maintenance:** Optimized pipelines supporting real-time clinical informatics.
+
+**Stack:** `R` `testthat` `SQLite` `Clinical Informatics` `Git`
+:::
+
+:::

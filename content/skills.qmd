@@ -2,58 +2,51 @@
 title: "Skills"
 ---
 
-## Programming
+## 🛠️ Skills & Expertise
 
-- **Python** — data pipelines, ETL, testing
-- **SQL** — analytics, warehousing
-- **R** — data validation, statistical workflows
-- Java, Bash
+::: {.grid}
 
----
+::: {.g-col-12 .g-col-md-6 .card}
+### 💻 Programming
+- **Python** — ETL pipelines, data analysis, testing  
+- **SQL** — analytics, warehousing, querying big datasets  
+- **R** — statistical workflows, data validation, reproducible analysis 
+- **Bash** — scripting & automation
 
-## Data Engineering
+:::
 
-- Apache Airflow
-- Apache Spark
-- dbt
-- Apache Parquet & Arrow
-- DuckDB
+::: {.g-col-12 .g-col-md-6 .card}
+### ⚙️ Data Engineering
+- **Apache Airflow** — orchestrating workflows  
+- **Apache Spark** — distributed data processing  
+- **dbt** — analytics engineering & transformations  
+- **Parquet & Arrow** — high-performance data storage & in-memory analytics  
+- **DuckDB** — fast local analytics
+:::
 
----
+::: {.g-col-12 .g-col-md-6 .card}
+### ☁️ Cloud & Platforms
+#### Google Cloud
+- BigQuery, Cloud Storage, Pub/Sub  
+- Cloud Functions, Cloud Run, Composer  
 
-## Cloud & Platforms
+#### AWS
+- S3, Redshift, Athena, IAM
+:::
 
-### Google Cloud
-- BigQuery
-- Cloud Storage
-- Pub/Sub
-- Cloud Functions
-- Cloud Run
-- Composer
+::: {.g-col-12 .g-col-md-6 .card}
+### 🗄️ Databases & Analytics
+- PostgreSQL, MongoDB, DuckDB, SQLite  
+- Tableau — dashboards & visualization  
+- Grafana — monitoring & metrics
+:::
 
-### AWS
-- S3
-- Redshift
-- Athena
-- IAM
+::: {.g-col-12 .g-col-md-6 .card}
+### 🧰 Engineering Practices
+- **CI/CD** — GitHub Actions  
+- **Docker** — containerized workflows  
+- Unit testing & data validation  
+- Data quality checks & reproducible pipelines
+:::
 
----
-
-## Databases & Analytics
-
-- PostgreSQL
-- MongoDB
-- OracleDB
-- SQLite
-- Tableau
-- Grafana
-
----
-
-## Engineering Practices
-
-- CI/CD (GitHub Actions)
-- Docker
-- Unit testing & data validation
-- Data quality checks
-- Reproducible pipelines
+:::
