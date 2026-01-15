@@ -19,3 +19,65 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.profile-pic {
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    width: 280px;
+    /* adjust size if needed */
+    border-radius: 12px;
+    /* soft corners, NOT circle */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Navbar background */
+.navbar,
+.navbar-dark,
+.navbar-light {
+    background-color: #1e90ff !important;
+    /* DodgerBlue */
+}
+
+/* Navbar links (section titles) */
+.navbar a {
+    color: white !important;
+    font-weight: 700;
+    /* Bold section titles */
+}
+
+/* Navbar links hover */
+.navbar a:hover {
+    color: #ffd700 !important;
+    /* Optional hover highlight */
+}
+
+/* Brand / site title */
+.navbar-brand {
+    color: white !important;
+    font-weight: 700;
+}
+
+/* Search icon & dark mode toggle */
+.navbar .theme-toggle,
+.navbar .search {
+    color: white !important;
+    font-size: 1.1em;
+}
+
+/* Optional: dark mode navbar background */
+body[data-theme="dark"] .navbar {
+    background-color: #0d3b66 !important;
+}
+
+.count-box {
+    display: inline-block;
+    background-color: #1e90ff;
+    /* match navbar blue */
+    color: white;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

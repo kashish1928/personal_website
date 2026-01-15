@@ -32,7 +32,7 @@
     "href": "hobbies.html",
     "title": "Hobbies & Interests",
     "section": "",
-    "text": "Outside of work and school, I enjoy:\n\n🏋️‍♂️ Strength training and fitness\n📈 Personal finance & long-term investing\n🤖 Keeping up with AI research and data tooling\n🌍 Exploring data-for-social-good projects\n🧑‍🏫 Teaching and mentoring students"
+    "text": "I love staying active and trying new things. My favorites are:\n- Swimming 🏊‍♂️ — nothing like the calm of the water to reset your brain\n- Running 🏃‍♂️ — Vancouver runs are the best therapy\n- A little bit of every sport I can get my hands on 🏀⚽🎾 — keeps things fun and unpredictable\n\n\n\nI’m a binge-watcher at heart. My current favorites:\nShows:\n- Stranger Things — suspense, mystery, and 80s nostalgia all rolled into one\n- Modern Family — hilarious, heartwarming, and perfectly relatable\nMovies:\n- F1: The movie — fast cars, big drama, and real-life racing chaos\n- Bhool Bhulaiyaa — twists, thrills, and a touch of spookiness\n- Crazy, Stupid, Love — romance, humor, and awkwardly perfect moments\n\n\n\n\n2026 books read: 0 / 12\n\nSome personal picks I’d recommend:\n- And Then There Were None — classic mystery that keeps you guessing\n- Byculla to Bangkok — a gripping true story with incredible storytelling\n- Wealthy Barber Returns — fun, practical personal finance advice\n- Harry Potter and the Prisoner of Azkaban — magic, nostalgia, and timeless adventure\n\n\n\nI enjoy learning about investing, budgeting, and planning for the future. It’s surprisingly fun when you see ideas actually work in real life!\nYou’d often find me on investopedia or reddit browing r/personalFinanceCanada\n\n\n\nI enjoy the mix of speed, strategy, and engineering, and every race has me hoping, laughing, and occasionally facepalming (I support Ferrari)."
   },
   {
     "objectID": "projects.html",
@@ -60,14 +60,14 @@
     "href": "index.html",
     "title": "About Me",
     "section": "",
-    "text": "I’m a Statistics undergraduate at UBC and a Data Engineer with experience designing and scaling data platforms across healthcare, government research, and large-scale enterprise systems.\nMy interests sit at the intersection of:\n\nData engineering & analytics infrastructure\nDistributed systems and cloud platforms\nReproducible research and data quality\nPrivacy-aware data pipelines\n\nCurrently, I work with Airflow, Spark, dbt, Parquet, and Arrow to build reliable, production-grade pipelines.\n\n\n\n\n📍 Vancouver, Canada\n\n🎓 BSc in Statistics @ UBC\n\n🧠 GPA: 4.0 / 4.33\n\n👨‍🏫 Undergraduate TA — Statistics"
+    "text": ":::"
   },
   {
     "objectID": "index.html#hi-im-kashish",
     "href": "index.html#hi-im-kashish",
     "title": "About Me",
-    "section": "",
-    "text": "I’m a Statistics undergraduate at UBC and a Data Engineer with experience designing and scaling data platforms across healthcare, government research, and large-scale enterprise systems.\nMy interests sit at the intersection of:\n\nData engineering & analytics infrastructure\nDistributed systems and cloud platforms\nReproducible research and data quality\nPrivacy-aware data pipelines\n\nCurrently, I work with Airflow, Spark, dbt, Parquet, and Arrow to build reliable, production-grade pipelines.\n\n\n\n\n📍 Vancouver, Canada\n\n🎓 BSc in Statistics @ UBC\n\n🧠 GPA: 4.0 / 4.33\n\n👨‍🏫 Undergraduate TA — Statistics"
+    "section": "Hi, I’m Kashish 👋",
+    "text": "Hi, I’m Kashish 👋\nI’m a Statistics student at UBC who likes working with data - cleaning it, analyzing it, building things with it, and occasionally wondering why it’s broken in the first place.\nI’ve spent time across data science, analytics, and data engineering, working on projects in healthcare, government, and large companies. I enjoy figuring out how data moves from raw and messy to useful and understandable.\nRight now, I mostly work with Python and SQL, and spend a lot of time around tools like Airflow, Spark, dbt, Parquet, and Arrow. I like systems that are simple, reproducible, and don’t surprise you at 3am.\nWhen I’m not working with data, I’m either at the pool, catching up on sleep, or convincing myself I’ll only watch one episode.\n\n\nQuick Facts\n\n📍 Vancouver, Canada\n\n🎓 BSc in Statistics @ UBC\n\n🧠 GPA: 4.0 / 4.33\n\n👨‍🏫 Stats TA\n\n🍵 Tea enthusiast"
   },
   {
     "objectID": "skills.html",
@@ -124,5 +124,12 @@
     "title": "Why Parquet + Arrow Changed Our Ingestion Pipeline",
     "section": "",
     "text": "During my internship at Population Data BC, we migrated ingestion pipelines from CSV-based workflows to Apache Parquet with Arrow-backed in-memory analytics.\n\nKey Takeaways\n\nColumnar formats dramatically reduce I/O\nArrow enables zero-copy data sharing\nResearcher productivity improved immediately\n\nMore technical deep-dive coming soon."
+  },
+  {
+    "objectID": "hobbies.html#what-i-do-outside-of-work-school",
+    "href": "hobbies.html#what-i-do-outside-of-work-school",
+    "title": "Hobbies & Interests",
+    "section": "",
+    "text": "I love staying active and trying new things. My favorites are:\n- Swimming 🏊‍♂️ — nothing like the calm of the water to reset your brain\n- Running 🏃‍♂️ — Vancouver runs are the best therapy\n- A little bit of every sport I can get my hands on 🏀⚽🎾 — keeps things fun and unpredictable\n\n\n\nI’m a binge-watcher at heart. My current favorites:\nShows:\n- Stranger Things — suspense, mystery, and 80s nostalgia all rolled into one\n- Modern Family — hilarious, heartwarming, and perfectly relatable\nMovies:\n- F1: The movie — fast cars, big drama, and real-life racing chaos\n- Bhool Bhulaiyaa — twists, thrills, and a touch of spookiness\n- Crazy, Stupid, Love — romance, humor, and awkwardly perfect moments\n\n\n\n\n2026 books read: 0 / 12\n\nSome personal picks I’d recommend:\n- And Then There Were None — classic mystery that keeps you guessing\n- Byculla to Bangkok — a gripping true story with incredible storytelling\n- Wealthy Barber Returns — fun, practical personal finance advice\n- Harry Potter and the Prisoner of Azkaban — magic, nostalgia, and timeless adventure\n\n\n\nI enjoy learning about investing, budgeting, and planning for the future. It’s surprisingly fun when you see ideas actually work in real life!\nYou’d often find me on investopedia or reddit browing r/personalFinanceCanada\n\n\n\nI enjoy the mix of speed, strategy, and engineering, and every race has me hoping, laughing, and occasionally facepalming (I support Ferrari)."
   }
 ]
