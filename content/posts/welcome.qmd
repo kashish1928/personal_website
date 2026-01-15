@@ -1,0 +1,15 @@
+---
+title: "Why Parquet + Arrow Changed Our Ingestion Pipeline"
+date: 2026-01-01
+---
+
+During my internship at Population Data BC, we migrated ingestion pipelines
+from CSV-based workflows to Apache Parquet with Arrow-backed in-memory analytics.
+
+### Key Takeaways
+
+- Columnar formats dramatically reduce I/O
+- Arrow enables zero-copy data sharing
+- Researcher productivity improved immediately
+
+More technical deep-dive coming soon.

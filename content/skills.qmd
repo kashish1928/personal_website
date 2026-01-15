@@ -1,0 +1,59 @@
+---
+title: "Skills"
+---
+
+## Programming
+
+- **Python** — data pipelines, ETL, testing
+- **SQL** — analytics, warehousing
+- **R** — data validation, statistical workflows
+- Java, Bash
+
+---
+
+## Data Engineering
+
+- Apache Airflow
+- Apache Spark
+- dbt
+- Apache Parquet & Arrow
+- DuckDB
+
+---
+
+## Cloud & Platforms
+
+### Google Cloud
+- BigQuery
+- Cloud Storage
+- Pub/Sub
+- Cloud Functions
+- Cloud Run
+- Composer
+
+### AWS
+- S3
+- Redshift
+- Athena
+- IAM
+
+---
+
+## Databases & Analytics
+
+- PostgreSQL
+- MongoDB
+- OracleDB
+- SQLite
+- Tableau
+- Grafana
+
+---
+
+## Engineering Practices
+
+- CI/CD (GitHub Actions)
+- Docker
+- Unit testing & data validation
+- Data quality checks
+- Reproducible pipelines

@@ -1,0 +1,17 @@
+---
+title: "Projects"
+---
+
+## Wine Classify (R Package)
+
+- Built a reusable R package using `devtools` and `usethis`
+- Simplified **KNN classification workflows**
+- Integrated **CI/CD** with automated testing and Docker
+
+---
+
+## Job Search Portal
+
+- Built a PHP + OracleDB application managing **1,000+ job applications**
+- Designed database schemas normalized to **BCNF**
+- Implemented backend services using HTTP APIs

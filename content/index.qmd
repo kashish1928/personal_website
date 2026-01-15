@@ -1,0 +1,27 @@
+---
+title: "About Me"
+---
+
+## Hi, I’m Kashish 👋
+
+I’m a **Statistics undergraduate at UBC** and a **Data Engineer** with experience designing and scaling
+data platforms across healthcare, government research, and large-scale enterprise systems.
+
+My interests sit at the intersection of:
+
+- Data engineering & analytics infrastructure
+- Distributed systems and cloud platforms
+- Reproducible research and data quality
+- Privacy-aware data pipelines
+
+Currently, I work with **Airflow, Spark, dbt, Parquet, and Arrow** to build reliable, production-grade pipelines.
+
+---
+
+### Quick Facts
+
+- 📍 Vancouver, Canada  
+- 🎓 BSc in Statistics @ UBC  
+- 🧠 GPA: 4.0 / 4.33  
+- 👨‍🏫 Undergraduate TA — Statistics  
+

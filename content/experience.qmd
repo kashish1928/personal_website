@@ -1,0 +1,34 @@
+---
+title: "Experience"
+---
+
+## Data Engineer Intern  
+**Population Data BC** — Vancouver, BC  
+*Sep 2025 – Present*
+
+- Led migration from CSV-based ingestion to **Apache Parquet**, reducing researcher ingestion time by **60%**.
+- Integrated **Apache Arrow** to improve in-memory analytics and reduce query latency by **40%**.
+- Built reproducible **Python ETL pipelines** with unit tests, Makefiles, logging, and documentation.
+- Migrated legacy pipelines to a **modern Airflow-orchestrated architecture** using DuckDB.
+
+---
+
+## Data Engineer Intern  
+**Samsung Electronics** — Vancouver, BC  
+*Sep 2024 – Aug 2025*
+
+- Deployed **CI/CD pipelines** via GitHub Actions for real-time PII tagging across **10+ streams** processing **500M+ records/day**.
+- Orchestrated cross-region data transfers for **200+ datasets** with **99% availability**.
+- Automated ETL workflows for **50+ Tableau dashboards** using Airflow.
+- Built **dbt pipelines** ingesting FastAPI-backed application data.
+- Performed large-scale **data quality analysis** on Redshift datasets (>20M records).
+
+---
+
+## Software Developer Intern  
+**Vancouver Coastal Health** — Vancouver, BC  
+*May 2024 – Aug 2024*
+
+- Developed an **R package** for ingestion-layer data validation using `testthat`.
+- Migrated ingestion from flat files to **SQLite-based storage**.
+- Maintained analytical pipelines supporting clinical informatics systems.

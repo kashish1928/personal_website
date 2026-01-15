@@ -1,0 +1,21 @@
+body {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+h2,
+h3 {
+    margin-top: 1.4em;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
