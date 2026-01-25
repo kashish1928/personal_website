@@ -326,9 +326,9 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>The Mission:</strong> Optimizing the bridge between massive provincial health datasets and academic research.</p>
 <p><strong>Key Contributions:</strong></p>
 <ul>
-<li><strong>Performance Engineering:</strong> Transitioned to <strong>Apache Parquet/Arrow</strong>, slashing ingestion times by <strong>60%</strong>.</li>
-<li><strong>Infrastructure:</strong> Implemented <strong>Airflow</strong> + <strong>DuckDB</strong> for lightning-fast local processing.</li>
-<li><strong>Reliability:</strong> Built Python ETL pipelines with full unit testing and logging.</li>
+<li><strong>Performance Engineering:</strong> Led the transition from legacy CSV ingestion to a high-performance <strong>Apache Parquet</strong> and <strong>Apache Arrow</strong> stack. This architecture shift slashed researcher data ingestion times by <strong>60%</strong> and reduced query latency by <strong>40%</strong>.</li>
+<li><strong>Infrastructure Modernization:</strong> Re-engineered core pipelines into a modern, container-ready architecture. I implemented <strong>Airflow</strong> orchestration paired with <strong>DuckDB</strong> to allow for lightning-fast, reproducible local processing of large-scale records.</li>
+<li><strong>Reliability:</strong> Established a “DevOps for Data” culture by building Python ETL pipelines reinforced with unit tests, automated logging, and comprehensive documentation.</li>
 </ul>
 <p><strong>Stack:</strong> <code>Python</code> <code>Airflow</code> <code>DuckDB</code> <code>Arrow</code> <code>Parquet</code></p>
 </section>
@@ -338,9 +338,9 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>The Mission:</strong> Managing global-scale data infrastructure and privacy compliance.</p>
 <p><strong>Key Contributions:</strong></p>
 <ul>
-<li><strong>Scale:</strong> Managed real-time processing of <strong>500M+ records/day</strong> with automated PII tagging.</li>
-<li><strong>Reliability:</strong> Maintained <strong>99% availability</strong> for cross-region transfers of 200+ datasets.</li>
-<li><strong>Analytics:</strong> Used <strong>dbt</strong> to automate workflows for 50+ executive dashboards.</li>
+<li><strong>High-Volume Orchestration:</strong> Managed the real-time processing of <strong>500M+ records per day</strong>. I deployed automated CI/CD pipelines via GitHub Actions that handled dynamic PII (Personal Identifiable Information) tagging across 10+ data streams.</li>
+<li><strong>Data Reliability:</strong> Owned the orchestration of cross-region transfers for <strong>200+ datasets</strong>, maintaining a strict <strong>99% availability</strong> SLA for downstream analytics teams.</li>
+<li><strong>Analytics Engineering:</strong> Leveraged <strong>dbt (data build tool)</strong> to transform raw FastAPI-backed application data into actionable insights, automating the workflows for over 50 executive Tableau dashboards.</li>
 </ul>
 <p><strong>Stack:</strong> <code>AWS Redshift</code> <code>dbt</code> <code>Airflow</code> <code>GitHub Actions</code> <code>Tableau</code></p>
 </section>
@@ -350,9 +350,9 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>The Mission:</strong> Enhancing data integrity for clinical informatics systems.</p>
 <p><strong>Key Contributions:</strong></p>
 <ul>
-<li><strong>Validation:</strong> Developed an <strong>R package</strong> (<code>testthat</code>) to enforce data quality at ingestion.</li>
-<li><strong>Storage:</strong> Migrated clinical records from flat files to <strong>SQLite</strong> for faster retrieval.</li>
-<li><strong>Maintenance:</strong> Optimized pipelines supporting real-time clinical informatics.</li>
+<li><strong>Validation Frameworks:</strong> Developed a custom <strong>R package</strong> using the <code>testthat</code> framework to enforce data quality at the ingestion layer. This prevented “dirty data” from entering downstream clinical pipelines.</li>
+<li><strong>Modern Storage:</strong> Spearheaded the migration of historical clinical records from unstructured flat files to a centralized <strong>SQLite-based storage</strong> system, enabling faster retrieval and more complex analytical queries.</li>
+<li><strong>Pipeline Maintenance:</strong> Maintained and optimized critical analytical pipelines that support real-time clinical informatics, ensuring healthcare providers had access to validated data.</li>
 </ul>
 <p><strong>Stack:</strong> <code>R</code> <code>testthat</code> <code>SQLite</code> <code>Clinical Informatics</code> <code>Git</code></p>
 </section>

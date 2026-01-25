@@ -10,9 +10,10 @@
 
 **Key Contributions:**
 
-* **Performance Engineering:** Transitioned to **Apache Parquet/Arrow**, slashing ingestion times by **60%**.
-* **Infrastructure:** Implemented **Airflow** + **DuckDB** for lightning-fast local processing.
-* **Reliability:** Built Python ETL pipelines with full unit testing and logging.
+* **Performance Engineering:** Led the transition from legacy CSV ingestion to a high-performance **Apache Parquet** and **Apache Arrow** stack. This architecture shift slashed researcher data ingestion times by **60%** and reduced query latency by **40%**.
+* **Infrastructure Modernization:** Re-engineered core pipelines into a modern, container-ready architecture. I implemented **Airflow** orchestration paired with **DuckDB** to allow for lightning-fast, reproducible local processing of large-scale records.
+* **Reliability:** Established a "DevOps for Data" culture by building Python ETL pipelines reinforced with unit tests, automated logging, and comprehensive documentation.
+
 
 **Stack:** `Python` `Airflow` `DuckDB` `Arrow` `Parquet`
 :::
@@ -25,9 +26,10 @@
 
 **Key Contributions:**
 
-* **Scale:** Managed real-time processing of **500M+ records/day** with automated PII tagging.
-* **Reliability:** Maintained **99% availability** for cross-region transfers of 200+ datasets.
-* **Analytics:** Used **dbt** to automate workflows for 50+ executive dashboards.
+* **High-Volume Orchestration:** Managed the real-time processing of **500M+ records per day**. I deployed automated CI/CD pipelines via GitHub Actions that handled dynamic PII (Personal Identifiable Information) tagging across 10+ data streams.
+* **Data Reliability:** Owned the orchestration of cross-region transfers for **200+ datasets**, maintaining a strict **99% availability** SLA for downstream analytics teams.
+* **Analytics Engineering:** Leveraged **dbt (data build tool)** to transform raw FastAPI-backed application data into actionable insights, automating the workflows for over 50 executive Tableau dashboards.
+
 
 **Stack:** `AWS Redshift` `dbt` `Airflow` `GitHub Actions` `Tableau`
 :::
@@ -40,9 +42,9 @@
 
 **Key Contributions:**
 
-* **Validation:** Developed an **R package** (`testthat`) to enforce data quality at ingestion.
-* **Storage:** Migrated clinical records from flat files to **SQLite** for faster retrieval.
-* **Maintenance:** Optimized pipelines supporting real-time clinical informatics.
+* **Validation Frameworks:** Developed a custom **R package** using the `testthat` framework to enforce data quality at the ingestion layer. This prevented "dirty data" from entering downstream clinical pipelines.
+* **Modern Storage:** Spearheaded the migration of historical clinical records from unstructured flat files to a centralized **SQLite-based storage** system, enabling faster retrieval and more complex analytical queries.
+* **Pipeline Maintenance:** Maintained and optimized critical analytical pipelines that support real-time clinical informatics, ensuring healthcare providers had access to validated data.
 
 **Stack:** `R` `testthat` `SQLite` `Clinical Informatics` `Git`
 :::
