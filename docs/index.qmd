@@ -1,0 +1,23 @@
+---
+title: "About Me"
+---
+
+::: {.columns}
+::: {.column width="100%"}
+
+![](assets/profile.jpg){fig-alt="Photo of Kashish Joshipura" .profile-pic}
+
+:::
+:::
+
+## Hi, I’m Kashish 👋
+
+I’m a **Statistics student at UBC Vancouver** who likes working with data - cleaning it, analyzing it, building things with it, and occasionally wondering why it’s broken in the first place.
+
+I’ve spent time across **data science, analytics, and data engineering**, working on projects in healthcare, government, and large companies. I enjoy figuring out how data moves from *raw and messy* to *useful and understandable*.
+
+Right now, I mostly work with **Python and SQL**, and spend a lot of time around tools like **Airflow, Spark, dbt, Parquet, and Arrow**. I like systems that are simple, reproducible, and don’t surprise you at 3am.
+
+When I’m not working with data, I’m either at the pool, catching up on sleep, or convincing myself I’ll only watch one episode.
+
+---

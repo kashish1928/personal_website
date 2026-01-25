@@ -1,0 +1,52 @@
+## 🛠️ Professional Experience
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .experience-card}
+### 🏥 Population Data BC
+**Data Engineer Intern** *Sept 2025 – Present*
+
+**The Mission:** Optimizing the bridge between massive provincial health datasets and academic research.
+
+**Key Contributions:**
+
+* **Performance Engineering:** Led the transition from legacy CSV ingestion to a high-performance **Apache Parquet** and **Apache Arrow** stack. This architecture shift slashed researcher data ingestion times by **60%** and reduced query latency by **40%**.
+* **Infrastructure Modernization:** Re-engineered core pipelines into a modern, container-ready architecture. I implemented **Airflow** orchestration paired with **DuckDB** to allow for lightning-fast, reproducible local processing of large-scale records.
+* **Reliability:** Established a "DevOps for Data" culture by building Python ETL pipelines reinforced with unit tests, automated logging, and comprehensive documentation.
+
+
+**Stack:** `Python` `Airflow` `DuckDB` `Arrow` `Parquet`
+:::
+
+::: {.g-col-12 .g-col-md-6 .experience-card}
+### 📱 Samsung R&D
+**Data Engineer Intern** *Sep 2024 – Aug 2025*
+
+**The Mission:** Managing global-scale data infrastructure and privacy compliance.
+
+**Key Contributions:**
+
+* **High-Volume Orchestration:** Managed the real-time processing of **500M+ records per day**. I deployed automated CI/CD pipelines via GitHub Actions that handled dynamic PII (Personal Identifiable Information) tagging across 10+ data streams.
+* **Data Reliability:** Owned the orchestration of cross-region transfers for **200+ datasets**, maintaining a strict **99% availability** SLA for downstream analytics teams.
+* **Analytics Engineering:** Leveraged **dbt (data build tool)** to transform raw FastAPI-backed application data into actionable insights, automating the workflows for over 50 executive Tableau dashboards.
+
+
+**Stack:** `AWS Redshift` `dbt` `Airflow` `GitHub Actions` `Tableau`
+:::
+
+::: {.g-col-12 .experience-card}
+### 💉 Vancouver Coastal Health
+**Software Developer Intern** *May 2024 – Aug 2024*
+
+**The Mission:** Enhancing data integrity for clinical informatics systems.
+
+**Key Contributions:**
+
+* **Validation Frameworks:** Developed a custom **R package** using the `testthat` framework to enforce data quality at the ingestion layer. This prevented "dirty data" from entering downstream clinical pipelines.
+* **Modern Storage:** Spearheaded the migration of historical clinical records from unstructured flat files to a centralized **SQLite-based storage** system, enabling faster retrieval and more complex analytical queries.
+* **Pipeline Maintenance:** Maintained and optimized critical analytical pipelines that support real-time clinical informatics, ensuring healthcare providers had access to validated data.
+
+**Stack:** `R` `testthat` `SQLite` `Clinical Informatics` `Git`
+:::
+
+:::

@@ -1,0 +1,163 @@
+[
+  {
+    "objectID": "experience.html",
+    "href": "experience.html",
+    "title": "Kashish Joshipura",
+    "section": "",
+    "text": "Data Engineer Intern Sept 2025 – Present\nThe Mission: Optimizing the bridge between massive provincial health datasets and academic research.\nKey Contributions:\n\nPerformance Engineering: Led the transition from legacy CSV ingestion to a high-performance Apache Parquet and Apache Arrow stack. This architecture shift slashed researcher data ingestion times by 60% and reduced query latency by 40%.\nInfrastructure Modernization: Re-engineered core pipelines into a modern, container-ready architecture. I implemented Airflow orchestration paired with DuckDB to allow for lightning-fast, reproducible local processing of large-scale records.\nReliability: Established a “DevOps for Data” culture by building Python ETL pipelines reinforced with unit tests, automated logging, and comprehensive documentation.\n\nStack: Python Airflow DuckDB Arrow Parquet\n\n\n\nData Engineer Intern Sep 2024 – Aug 2025\nThe Mission: Managing global-scale data infrastructure and privacy compliance.\nKey Contributions:\n\nHigh-Volume Orchestration: Managed the real-time processing of 500M+ records per day. I deployed automated CI/CD pipelines via GitHub Actions that handled dynamic PII (Personal Identifiable Information) tagging across 10+ data streams.\nData Reliability: Owned the orchestration of cross-region transfers for 200+ datasets, maintaining a strict 99% availability SLA for downstream analytics teams.\nAnalytics Engineering: Leveraged dbt (data build tool) to transform raw FastAPI-backed application data into actionable insights, automating the workflows for over 50 executive Tableau dashboards.\n\nStack: AWS Redshift dbt Airflow GitHub Actions Tableau\n\n\n\nSoftware Developer Intern May 2024 – Aug 2024\nThe Mission: Enhancing data integrity for clinical informatics systems.\nKey Contributions:\n\nValidation Frameworks: Developed a custom R package using the testthat framework to enforce data quality at the ingestion layer. This prevented “dirty data” from entering downstream clinical pipelines.\nModern Storage: Spearheaded the migration of historical clinical records from unstructured flat files to a centralized SQLite-based storage system, enabling faster retrieval and more complex analytical queries.\nPipeline Maintenance: Maintained and optimized critical analytical pipelines that support real-time clinical informatics, ensuring healthcare providers had access to validated data.\n\nStack: R testthat SQLite Clinical Informatics Git"
+  },
+  {
+    "objectID": "experience.html#data-engineer-intern",
+    "href": "experience.html#data-engineer-intern",
+    "title": "Experience",
+    "section": "",
+    "text": "Population Data BC — Vancouver, BC\nSep 2025 – Present\n\nLed migration from CSV-based ingestion to Apache Parquet, reducing researcher ingestion time by 60%.\nIntegrated Apache Arrow to improve in-memory analytics and reduce query latency by 40%.\nBuilt reproducible Python ETL pipelines with unit tests, Makefiles, logging, and documentation.\nMigrated legacy pipelines to a modern Airflow-orchestrated architecture using DuckDB."
+  },
+  {
+    "objectID": "experience.html#data-engineer-intern-1",
+    "href": "experience.html#data-engineer-intern-1",
+    "title": "Experience",
+    "section": "Data Engineer Intern",
+    "text": "Data Engineer Intern\nSamsung Electronics — Vancouver, BC\nSep 2024 – Aug 2025\n\nDeployed CI/CD pipelines via GitHub Actions for real-time PII tagging across 10+ streams processing 500M+ records/day.\nOrchestrated cross-region data transfers for 200+ datasets with 99% availability.\nAutomated ETL workflows for 50+ Tableau dashboards using Airflow.\nBuilt dbt pipelines ingesting FastAPI-backed application data.\nPerformed large-scale data quality analysis on Redshift datasets (&gt;20M records)."
+  },
+  {
+    "objectID": "experience.html#software-developer-intern",
+    "href": "experience.html#software-developer-intern",
+    "title": "Experience",
+    "section": "Software Developer Intern",
+    "text": "Software Developer Intern\nVancouver Coastal Health — Vancouver, BC\nMay 2024 – Aug 2024\n\nDeveloped an R package for ingestion-layer data validation using testthat.\nMigrated ingestion from flat files to SQLite-based storage.\nMaintained analytical pipelines supporting clinical informatics systems."
+  },
+  {
+    "objectID": "hobbies.html",
+    "href": "hobbies.html",
+    "title": "Hobbies & Interests",
+    "section": "",
+    "text": "I love staying active and trying new things. My favorites are:\n- Swimming 🏊‍♂️ — nothing like the calm of the water to reset your brain\n- Running 🏃‍♂️ — Vancouver runs are the best therapy\n- A little bit of every sport I can get my hands on 🏀⚽🎾 — keeps things fun and unpredictable\n\n\n\nI’m a binge-watcher at heart. My current favorites:\nShows:\n- Stranger Things — suspense, mystery, and 80s nostalgia all rolled into one\n- Modern Family — hilarious, heartwarming, and perfectly relatable\nMovies:\n- F1: The movie — fast cars, big drama, and real-life racing chaos\n- Bhool Bhulaiyaa — twists, thrills, and a touch of spookiness\n- Crazy, Stupid, Love — romance, humor, and awkwardly perfect moments\n\n\n\n\n2026 books read: 0 / 12\n\nSome personal picks I’d recommend:\n- And Then There Were None — classic mystery that keeps you guessing\n- Byculla to Bangkok — a gripping true story with incredible storytelling\n- Wealthy Barber Returns — fun, practical personal finance advice\n- Harry Potter and the Prisoner of Azkaban — magic, nostalgia, and timeless adventure\n\n\n\nI enjoy learning about investing, budgeting, and planning for the future. It’s surprisingly fun when you see ideas actually work in real life!\nYou’d often find me on investopedia or reddit browsing r/personalFinanceCanada\n\n\n\nI enjoy the mix of speed, strategy, and engineering, and every race has me hoping, laughing, and occasionally facepalming (life of a Ferrari supporter)."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Built a reusable R package using devtools and usethis\nSimplified KNN classification workflows\nIntegrated CI/CD with automated testing and Docker"
+  },
+  {
+    "objectID": "projects.html#wine-classify-r-package",
+    "href": "projects.html#wine-classify-r-package",
+    "title": "Projects",
+    "section": "Wine Classify (R Package)",
+    "text": "Wine Classify (R Package)\n\nBuilt a reusable R package using devtools and usethis\nSimplified KNN classification workflows\nIntegrated CI/CD with automated testing and Docker"
+  },
+  {
+    "objectID": "projects.html#job-search-portal",
+    "href": "projects.html#job-search-portal",
+    "title": "Projects",
+    "section": "Job Search Portal",
+    "text": "Job Search Portal\n\nBuilt a PHP + OracleDB application managing 1,000+ job applications\nDesigned database schemas normalized to BCNF\nImplemented backend services using HTTP APIs"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About Me",
+    "section": "",
+    "text": ":::"
+  },
+  {
+    "objectID": "index.html#hi-im-kashish",
+    "href": "index.html#hi-im-kashish",
+    "title": "About Me",
+    "section": "Hi, I’m Kashish 👋",
+    "text": "Hi, I’m Kashish 👋\nI’m a Statistics student at UBC Vancouver who likes working with data - cleaning it, analyzing it, building things with it, and occasionally wondering why it’s broken in the first place.\nI’ve spent time across data science, analytics, and data engineering, working on projects in healthcare, government, and large companies. I enjoy figuring out how data moves from raw and messy to useful and understandable.\nRight now, I mostly work with Python and SQL, and spend a lot of time around tools like Airflow, Spark, dbt, Parquet, and Arrow. I like systems that are simple, reproducible, and don’t surprise you at 3am.\nWhen I’m not working with data, I’m either at the pool, catching up on sleep, or convincing myself I’ll only watch one episode."
+  },
+  {
+    "objectID": "skills.html",
+    "href": "skills.html",
+    "title": "Skills",
+    "section": "",
+    "text": "Python — ETL pipelines, data analysis, testing\n\nSQL — analytics, warehousing, querying big datasets\n\nR — statistical workflows, data validation, reproducible analysis\nBash — scripting & automation\n\n\n\n\n\nApache Airflow — orchestrating workflows\n\nApache Spark — distributed data processing\n\ndbt — analytics engineering & transformations\n\nParquet & Arrow — high-performance data storage & in-memory analytics\n\nDuckDB — fast local analytics\n\n\n\n\n\n\n\nBigQuery, Cloud Storage, Pub/Sub\n\nCloud Functions, Cloud Run, Composer\n\n\n\n\n\nS3, Redshift, Athena, IAM\n\n\n\n\n\n\nPostgreSQL, MongoDB, DuckDB, SQLite\n\nTableau — dashboards & visualization\n\nGrafana — monitoring & metrics\n\n\n\n\n\nCI/CD — GitHub Actions\n\nDocker — containerized workflows\n\nUnit testing & data validation\n\nData quality checks & reproducible pipelines"
+  },
+  {
+    "objectID": "skills.html#programming",
+    "href": "skills.html#programming",
+    "title": "Skills",
+    "section": "",
+    "text": "Python — data pipelines, ETL, testing\nSQL — analytics, warehousing\nR — data validation, statistical workflows\nJava, Bash"
+  },
+  {
+    "objectID": "skills.html#data-engineering",
+    "href": "skills.html#data-engineering",
+    "title": "Skills",
+    "section": "Data Engineering",
+    "text": "Data Engineering\n\nApache Airflow\nApache Spark\ndbt\nApache Parquet & Arrow\nDuckDB"
+  },
+  {
+    "objectID": "skills.html#cloud-platforms",
+    "href": "skills.html#cloud-platforms",
+    "title": "Skills",
+    "section": "Cloud & Platforms",
+    "text": "Cloud & Platforms\n\nGoogle Cloud\n\nBigQuery\nCloud Storage\nPub/Sub\nCloud Functions\nCloud Run\nComposer\n\n\n\nAWS\n\nS3\nRedshift\nAthena\nIAM"
+  },
+  {
+    "objectID": "skills.html#databases-analytics",
+    "href": "skills.html#databases-analytics",
+    "title": "Skills",
+    "section": "Databases & Analytics",
+    "text": "Databases & Analytics\n\nPostgreSQL\nMongoDB\nOracleDB\nSQLite\nTableau\nGrafana"
+  },
+  {
+    "objectID": "skills.html#engineering-practices",
+    "href": "skills.html#engineering-practices",
+    "title": "Skills",
+    "section": "Engineering Practices",
+    "text": "Engineering Practices\n\nCI/CD (GitHub Actions)\nDocker\nUnit testing & data validation\nData quality checks\nReproducible pipelines"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Writing",
+    "section": "",
+    "text": "I occasionally write about:\n\nData engineering lessons from internships\nAirflow, dbt, Spark patterns\nData quality & reproducibility\nCareer notes for students breaking into data\n\n\n\n\n\nWhy Parquet + Arrow Changed Our Ingestion Pipeline"
+  },
+  {
+    "objectID": "posts/welcome.html",
+    "href": "posts/welcome.html",
+    "title": "Why Parquet + Arrow Changed Our Ingestion Pipeline",
+    "section": "",
+    "text": "During my internship at Population Data BC, we migrated ingestion pipelines from CSV-based workflows to Apache Parquet with Arrow-backed in-memory analytics.\n\nKey Takeaways\n\nColumnar formats dramatically reduce I/O\nArrow enables zero-copy data sharing\nResearcher productivity improved immediately\n\nMore technical deep-dive coming soon."
+  },
+  {
+    "objectID": "hobbies.html#what-i-do-outside-of-work-school",
+    "href": "hobbies.html#what-i-do-outside-of-work-school",
+    "title": "Hobbies & Interests",
+    "section": "",
+    "text": "I love staying active and trying new things. My favorites are:\n- Swimming 🏊‍♂️ — nothing like the calm of the water to reset your brain\n- Running 🏃‍♂️ — Vancouver runs are the best therapy\n- A little bit of every sport I can get my hands on 🏀⚽🎾 — keeps things fun and unpredictable\n\n\n\nI’m a binge-watcher at heart. My current favorites:\nShows:\n- Stranger Things — suspense, mystery, and 80s nostalgia all rolled into one\n- Modern Family — hilarious, heartwarming, and perfectly relatable\nMovies:\n- F1: The movie — fast cars, big drama, and real-life racing chaos\n- Bhool Bhulaiyaa — twists, thrills, and a touch of spookiness\n- Crazy, Stupid, Love — romance, humor, and awkwardly perfect moments\n\n\n\n\n2026 books read: 0 / 12\n\nSome personal picks I’d recommend:\n- And Then There Were None — classic mystery that keeps you guessing\n- Byculla to Bangkok — a gripping true story with incredible storytelling\n- Wealthy Barber Returns — fun, practical personal finance advice\n- Harry Potter and the Prisoner of Azkaban — magic, nostalgia, and timeless adventure\n\n\n\nI enjoy learning about investing, budgeting, and planning for the future. It’s surprisingly fun when you see ideas actually work in real life!\nYou’d often find me on investopedia or reddit browsing r/personalFinanceCanada\n\n\n\nI enjoy the mix of speed, strategy, and engineering, and every race has me hoping, laughing, and occasionally facepalming (life of a Ferrari supporter)."
+  },
+  {
+    "objectID": "experience.html#professional-journey-impact",
+    "href": "experience.html#professional-journey-impact",
+    "title": "Kashish Joshipura",
+    "section": "",
+    "text": "Data Engineer Intern Sept 2025 – Present | Vancouver, BC\nThe Mission: Optimizing the bridge between massive provincial health datasets and academic research.\nKey Contributions:\n\nPerformance Engineering: Led the transition from legacy CSV ingestion to a high-performance Apache Parquet and Apache Arrow stack. This architecture shift slashed researcher data ingestion times by 60% and reduced query latency by 40%.\nInfrastructure Modernization: Re-engineered core pipelines into a modern, container-ready architecture. I implemented Airflow orchestration paired with DuckDB to allow for lightning-fast, reproducible local processing of large-scale records.\nReliability: Established a “DevOps for Data” culture by building Python ETL pipelines reinforced with unit tests, automated logging, and comprehensive documentation.\n\nStack: Python Airflow DuckDB Apache Arrow Parquet SQL\n\n\n\nData Engineer Intern Sep 2024 – Aug 2025 | Vancouver, BC\nThe Mission: Managing global-scale data infrastructure and ensuring privacy compliance at high velocity.\nKey Contributions:\n\nHigh-Volume Orchestration: Managed the real-time processing of 500M+ records per day. I deployed automated CI/CD pipelines via GitHub Actions that handled dynamic PII (Personal Identifiable Information) tagging across 10+ data streams.\nData Reliability: Owned the orchestration of cross-region transfers for 200+ datasets, maintaining a strict 99% availability SLA for downstream analytics teams.\nAnalytics Engineering: Leveraged dbt (data build tool) to transform raw FastAPI-backed application data into actionable insights, automating the workflows for over 50 executive Tableau dashboards.\n\nStack: AWS Redshift dbt Airflow GitHub Actions Tableau FastAPI\n\n\n\nSoftware Developer Intern May 2024 – Aug 2024 | Vancouver, BC\nThe Mission: Enhancing data integrity and validation for clinical informatics systems.\nKey Contributions:\n\nValidation Frameworks: Developed a custom R package using the testthat framework to enforce data quality at the ingestion layer. This prevented “dirty data” from entering downstream clinical pipelines.\nModern Storage: Spearheaded the migration of historical clinical records from unstructured flat files to a centralized SQLite-based storage system, enabling faster retrieval and more complex analytical queries.\nPipeline Maintenance: Maintained and optimized critical analytical pipelines that support real-time clinical informatics, ensuring healthcare providers had access to validated data.\n\nStack: R testthat SQLite Clinical Informatics Git"
+  },
+  {
+    "objectID": "experience.html#professional-experience",
+    "href": "experience.html#professional-experience",
+    "title": "Kashish Joshipura",
+    "section": "",
+    "text": "Data Engineer Intern Sept 2025 – Present\nThe Mission: Optimizing the bridge between massive provincial health datasets and academic research.\nKey Contributions:\n\nPerformance Engineering: Led the transition from legacy CSV ingestion to a high-performance Apache Parquet and Apache Arrow stack. This architecture shift slashed researcher data ingestion times by 60% and reduced query latency by 40%.\nInfrastructure Modernization: Re-engineered core pipelines into a modern, container-ready architecture. I implemented Airflow orchestration paired with DuckDB to allow for lightning-fast, reproducible local processing of large-scale records.\nReliability: Established a “DevOps for Data” culture by building Python ETL pipelines reinforced with unit tests, automated logging, and comprehensive documentation.\n\nStack: Python Airflow DuckDB Arrow Parquet\n\n\n\nData Engineer Intern Sep 2024 – Aug 2025\nThe Mission: Managing global-scale data infrastructure and privacy compliance.\nKey Contributions:\n\nHigh-Volume Orchestration: Managed the real-time processing of 500M+ records per day. I deployed automated CI/CD pipelines via GitHub Actions that handled dynamic PII (Personal Identifiable Information) tagging across 10+ data streams.\nData Reliability: Owned the orchestration of cross-region transfers for 200+ datasets, maintaining a strict 99% availability SLA for downstream analytics teams.\nAnalytics Engineering: Leveraged dbt (data build tool) to transform raw FastAPI-backed application data into actionable insights, automating the workflows for over 50 executive Tableau dashboards.\n\nStack: AWS Redshift dbt Airflow GitHub Actions Tableau\n\n\n\nSoftware Developer Intern May 2024 – Aug 2024\nThe Mission: Enhancing data integrity for clinical informatics systems.\nKey Contributions:\n\nValidation Frameworks: Developed a custom R package using the testthat framework to enforce data quality at the ingestion layer. This prevented “dirty data” from entering downstream clinical pipelines.\nModern Storage: Spearheaded the migration of historical clinical records from unstructured flat files to a centralized SQLite-based storage system, enabling faster retrieval and more complex analytical queries.\nPipeline Maintenance: Maintained and optimized critical analytical pipelines that support real-time clinical informatics, ensuring healthcare providers had access to validated data.\n\nStack: R testthat SQLite Clinical Informatics Git"
+  },
+  {
+    "objectID": "skills.html#skills-expertise",
+    "href": "skills.html#skills-expertise",
+    "title": "Skills",
+    "section": "",
+    "text": "Python — ETL pipelines, data analysis, testing\n\nSQL — analytics, warehousing, querying big datasets\n\nR — statistical workflows, data validation, reproducible analysis\nBash — scripting & automation\n\n\n\n\n\nApache Airflow — orchestrating workflows\n\nApache Spark — distributed data processing\n\ndbt — analytics engineering & transformations\n\nParquet & Arrow — high-performance data storage & in-memory analytics\n\nDuckDB — fast local analytics\n\n\n\n\n\n\n\nBigQuery, Cloud Storage, Pub/Sub\n\nCloud Functions, Cloud Run, Composer\n\n\n\n\n\nS3, Redshift, Athena, IAM\n\n\n\n\n\n\nPostgreSQL, MongoDB, DuckDB, SQLite\n\nTableau — dashboards & visualization\n\nGrafana — monitoring & metrics\n\n\n\n\n\nCI/CD — GitHub Actions\n\nDocker — containerized workflows\n\nUnit testing & data validation\n\nData quality checks & reproducible pipelines"
+  },
+  {
+    "objectID": "blog.html#wip",
+    "href": "blog.html#wip",
+    "title": "Writing",
+    "section": "",
+    "text": "I occasionally write about:\n\nData engineering lessons from internships\nAirflow, dbt, Spark patterns\nData quality & reproducibility\nCareer notes for students breaking into data\n\n\n\n\n\nWhy Parquet + Arrow Changed Our Ingestion Pipeline"
+  }
+]

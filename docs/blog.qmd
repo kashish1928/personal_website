@@ -1,0 +1,17 @@
+---
+title: "Writing"
+---
+## WIP !!
+
+I occasionally write about:
+
+- Data engineering lessons from internships
+- Airflow, dbt, Spark patterns
+- Data quality & reproducibility
+- Career notes for students breaking into data
+
+---
+
+### Posts
+
+- [Why Parquet + Arrow Changed Our Ingestion Pipeline](posts/welcome.qmd)
