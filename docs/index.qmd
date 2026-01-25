@@ -20,4 +20,5 @@ Right now, I mostly work with **Python and SQL**, and spend a lot of time around
 
 When I’m not working with data, I’m either at the pool, catching up on sleep, or convincing myself I’ll only watch one episode.
 
+
 ---
