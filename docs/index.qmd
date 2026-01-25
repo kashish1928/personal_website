@@ -5,7 +5,7 @@ title: "About Me"
 ::: {.columns}
 ::: {.column width="100%"}
 
-![](assets/profile.jpg){fig-alt="Photo of Kashish Joshipura" .profile-pic}
+![](assets/profile.JPG){fig-alt="Photo of Kashish Joshipura" .profile-pic}
 
 :::
 :::
