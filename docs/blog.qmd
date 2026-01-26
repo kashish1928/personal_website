@@ -3,12 +3,15 @@ title: "Writing"
 ---
 ## WIP !!
 
-I occasionally write about:
+While I do not intend to follow a niche, I'd occasionally write about:
 
 - Data engineering lessons from internships
-- Airflow, dbt, Spark patterns
-- Data quality & reproducibility
-- Career notes for students breaking into data
+- Finance
+- Career notes for students
+- Book reviews
+- Show recommendations
+
+I'll try to keep stuff organized in groups!
 
 ---
 

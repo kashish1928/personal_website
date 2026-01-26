@@ -24,9 +24,9 @@ I’m a **binge-watcher at heart**. My current favorites:
 - *Crazy, Stupid, Love* — romance, humor, and awkwardly perfect moments  
 
 ### 📚 Reading
-::: {.count-box}
+<!-- ::: {.count-box}
 **2026 books read:** 0 / 12
-:::
+::: -->
 
 Some personal picks I’d recommend:  
 - *And Then There Were None* — classic mystery that keeps you guessing  
