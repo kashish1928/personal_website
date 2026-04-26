@@ -58,7 +58,7 @@ a:hover {
     font-size: 1.1em;
 }
 
-body[data-theme="dark"] .navbar {
+body.quarto-dark .navbar {
     background-color: #0d3b66 !important;
 }
 
@@ -129,7 +129,7 @@ body[data-theme="dark"] .navbar {
 /* ================== Dark Mode for Experience ================== */
 
 /* 1. If you want the cards to turn DARK with LIGHT text (Standard Dark Mode) */
-body[data-theme="dark"] .experience-card {
+body.quarto-dark .experience-card {
     background-color: #252525 !important;
     /* Dark background */
     border-color: #444 !important;
@@ -137,35 +137,35 @@ body[data-theme="dark"] .experience-card {
 }
 
 /* Ensure all text inside the dark card is light gray/white */
-body[data-theme="dark"] .experience-card p,
-body[data-theme="dark"] .experience-card li,
-body[data-theme="dark"] .experience-card strong,
-body[data-theme="dark"] .experience-card em,
-body[data-theme="dark"] .experience-card span {
+body.quarto-dark .experience-card p,
+body.quarto-dark .experience-card li,
+body.quarto-dark .experience-card strong,
+body.quarto-dark .experience-card em,
+body.quarto-dark .experience-card span {
     color: #e0e0e0 !important;
 }
 
 /* 2. OR: If you want the cards to stay WHITE with BLACK text even in dark mode */
-/* body[data-theme="dark"] .experience-card {
+/* body.quarto-dark .experience-card {
     background-color: #ffffff !important; 
     border-color: #e9ecef !important;
 }
 
-body[data-theme="dark"] .experience-card p,
-body[data-theme="dark"] .experience-card li,
-body[data-theme="dark"] .experience-card strong,
-body[data-theme="dark"] .experience-card em {
+body.quarto-dark .experience-card p,
+body.quarto-dark .experience-card li,
+body.quarto-dark .experience-card strong,
+body.quarto-dark .experience-card em {
     color: #212529 !important; 
 }
 */
 
 /* Styles for specific elements inside the card */
-body[data-theme="dark"] .experience-card h3 {
+body.quarto-dark .experience-card h3 {
     color: #63b3ed !important;
     /* Lighter blue for the heading */
 }
 
-body[data-theme="dark"] .experience-card code {
+body.quarto-dark .experience-card code {
     background-color: #3d3d3d !important;
     color: #ff79c6 !important;
     border: 1px solid #555;
