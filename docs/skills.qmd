@@ -23,7 +23,13 @@ title: "Skills"
 - **Parquet & Arrow** — high-performance data storage & in-memory analytics  
 - **DuckDB** — fast local analytics
 :::
-
+::: {.g-col-12 .g-col-md-6 .card}
+### 🤖 Machine Learning & AI
+- **LlamaIndex** — RAG & multi-agent system orchestration  
+- **Intelligent Doc Processing** — OCR & LLM-driven PDF analysis systems  
+- **Statistical Modeling** — Synthetic data generation (Poisson, Log-Normal, Normal)  
+- **ML Frameworks** — PyTorch, SciPy, NumPy, Scikit-Learn
+:::
 ::: {.g-col-12 .g-col-md-6 .card}
 ### ☁️ Cloud & Platforms
 #### Google Cloud
