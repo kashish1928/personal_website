@@ -18,3 +18,4 @@ I'll try to keep stuff organized in groups!
 ### Posts
 
 - [Why Parquet + Arrow Changed Our Ingestion Pipeline](posts/welcome.qmd)
+- [Reverse DCF(Discounted Cash Flow) Tool](posts/dcf.qmd)

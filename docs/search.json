@@ -4,14 +4,14 @@
     "href": "blog.html",
     "title": "Writing",
     "section": "",
-    "text": "While I do not intend to follow a niche, I’d occasionally write about:\n\nData engineering lessons from internships\nFinance\nCareer notes for students\nBook reviews\nShow recommendations\n\nI’ll try to keep stuff organized in groups!\n\n\n\n\nWhy Parquet + Arrow Changed Our Ingestion Pipeline"
+    "text": "While I do not intend to follow a niche, I’d occasionally write about:\n\nData engineering lessons from internships\nFinance\nCareer notes for students\nBook reviews\nShow recommendations\n\nI’ll try to keep stuff organized in groups!\n\n\n\n\nWhy Parquet + Arrow Changed Our Ingestion Pipeline\nReverse DCF(Discounted Cash Flow) Tool"
   },
   {
     "objectID": "blog.html#wip",
     "href": "blog.html#wip",
     "title": "Writing",
     "section": "",
-    "text": "While I do not intend to follow a niche, I’d occasionally write about:\n\nData engineering lessons from internships\nFinance\nCareer notes for students\nBook reviews\nShow recommendations\n\nI’ll try to keep stuff organized in groups!\n\n\n\n\nWhy Parquet + Arrow Changed Our Ingestion Pipeline"
+    "text": "While I do not intend to follow a niche, I’d occasionally write about:\n\nData engineering lessons from internships\nFinance\nCareer notes for students\nBook reviews\nShow recommendations\n\nI’ll try to keep stuff organized in groups!\n\n\n\n\nWhy Parquet + Arrow Changed Our Ingestion Pipeline\nReverse DCF(Discounted Cash Flow) Tool"
   },
   {
     "objectID": "experience.html",
@@ -82,5 +82,68 @@
     "title": "Skills",
     "section": "",
     "text": "Python — ETL pipelines, data analysis, testing\n\nSQL — analytics, warehousing, querying big datasets\n\nR — statistical workflows, data validation, reproducible analysis\nBash — scripting & automation\n\n\n\n\n\nApache Airflow — orchestrating workflows\n\nApache Spark — distributed data processing\n\ndbt — analytics engineering & transformations\n\nParquet & Arrow — high-performance data storage & in-memory analytics\n\nDuckDB — fast local analytics\n\n\n\n\n\n\n\nBigQuery, Cloud Storage, Pub/Sub\n\nCloud Functions, Cloud Run, Composer\n\n\n\n\n\nS3, Redshift, Athena, IAM\n\n\n\n\n\n\nPostgreSQL, MongoDB, DuckDB, SQLite\n\nTableau — dashboards & visualization\n\nGrafana — monitoring & metrics\n\n\n\n\n\nCI/CD — GitHub Actions\n\nDocker — containerized workflows\n\nUnit testing & data validation\n\nData quality checks & reproducible pipelines"
+  },
+  {
+    "objectID": "posts/dcf.html",
+    "href": "posts/dcf.html",
+    "title": "Beyond the Price Target: A Reverse DCF Framework for Expectation Investing",
+    "section": "",
+    "text": "A Discounted Cash Flow (DCF) model is the “gold standard” of valuation. It operates on a simple premise: a company is worth the sum of all the cash it will ever make, brought back into today’s dollars.\nTo do this, we project Free Cash Flows (FCF) for a decade, add a “Terminal Value” for the years beyond, and apply a WACC (Weighted Average Cost of Capital) which is essentially a discount rate that accounts for risk and the time value of money."
+  },
+  {
+    "objectID": "posts/dcf.html#what-is-a-dcf",
+    "href": "posts/dcf.html#what-is-a-dcf",
+    "title": "Beyond the Price Target: A Reverse DCF Framework for Expectation Investing",
+    "section": "",
+    "text": "A Discounted Cash Flow (DCF) model is the “gold standard” of valuation. It operates on a simple premise: a company is worth the sum of all the cash it will ever make, brought back into today’s dollars.\nTo do this, we project Free Cash Flows (FCF) for a decade, add a “Terminal Value” for the years beyond, and apply a WACC (Weighted Average Cost of Capital) which is essentially a discount rate that accounts for risk and the time value of money."
+  },
+  {
+    "objectID": "posts/dcf.html#forward-vs.-reverse-dcf-flipping-the-script",
+    "href": "posts/dcf.html#forward-vs.-reverse-dcf-flipping-the-script",
+    "title": "Beyond the Price Target: A Reverse DCF Framework for Expectation Investing",
+    "section": "Forward vs. Reverse DCF: Flipping the Script",
+    "text": "Forward vs. Reverse DCF: Flipping the Script\nThe difference between these two models is essentially the direction of the math. To understand it, think of a Road Trip:\n\nThe Forward DCF (The “Estimated Arrival”)\nIn a standard DCF, you are the driver making guesses about the future.\n\nThe Inputs: You decide the speed (Growth Rate) and how much gas you have (Margins).\nThe Output: The model tells you where you will end up (The Fair Value).\nThe Example: “If I drive at 60mph for 5 hours, I will be 300 miles away.”\nThe Risk: If you are too optimistic about your speed, you’ll overestimate how far you’ll get.\n\nEsentially, in a Forward DCF, the analyst is the driver. You input your assumptions for growth and margins, and the model outputs a “Fair Value.” The danger? Confirmation bias. If you like a stock, you might subconsciously nudge the growth rate higher to justify a “Buy” rating.\n\n\nThe Reverse DCF (The “Required Speed”)\nIn a Reverse DCF, the destination is already set by the market. We work backward to see if the trip is even possible.\n\nThe Input: You start with the destination (The Current Market Cap).\nThe Output: The model tells you how fast you must drive to get there in time (The Implied Growth Rate).\nThe Example: “The destination is 300 miles away and I only have 3 hours. I must drive at 100mph to get there.”\nThe Analysis: You then ask: “Is it realistic to drive 100mph? Does this car even go that fast?”\n\nEssentially, in a Reverse DCF removes the analyst’s bias. Instead of guessing a growth rate to find a price, we take the current Market Cap as an objective fact and solve for the Implied Revenue CAGR (Compound Annual Growth Rate).\nIt changes the question from “What is this stock worth?” to “What must the market believe for this price to be right?”\nBy flipping the script, we move from predicting the future to auditing the market’s expectations."
+  },
+  {
+    "objectID": "posts/dcf.html#project-aim-quantifying-market-optimism",
+    "href": "posts/dcf.html#project-aim-quantifying-market-optimism",
+    "title": "Beyond the Price Target: A Reverse DCF Framework for Expectation Investing",
+    "section": "Project Aim: Quantifying Market Optimism",
+    "text": "Project Aim: Quantifying Market Optimism\nThe goal of this project was to build a production-grade tool that democratizes institutional-level expectations investing. By productionizing this dashboard, I aimed to:\n\nIsolate the “Expectations Gap”: Compare what the market expects vs. what a company has historically delivered.\nStress-Test Assumptions: Visualize how sensitive a valuation is to shifts in macro factors like interest rates (WACC)."
+  },
+  {
+    "objectID": "posts/dcf.html#technical-implementation",
+    "href": "posts/dcf.html#technical-implementation",
+    "title": "Beyond the Price Target: A Reverse DCF Framework for Expectation Investing",
+    "section": "Technical Implementation",
+    "text": "Technical Implementation\nThe engine behind the dashboard leverages the Python scientific stack to solve non-linear equations:\n\nData Layer: yfinance API for live ingestion of Market Cap, TTM Revenue, and Beta.\nMathematical Solver: I utilized scipy.optimize (specifically the Brent method) to find the root of the function where the \\(NPV(\\text{projected flows}) - \\text{Market Cap} = 0\\).\nThe Dashboard: Built with Streamlit, allowing for real-time manipulation of the four core levers: Market Cap, WACC, FCF Margin, and Terminal Growth."
+  },
+  {
+    "objectID": "posts/dcf.html#how-to-use-interpret-the-results",
+    "href": "posts/dcf.html#how-to-use-interpret-the-results",
+    "title": "Beyond the Price Target: A Reverse DCF Framework for Expectation Investing",
+    "section": "How to Use & Interpret the Results",
+    "text": "How to Use & Interpret the Results\n\n\n\nReverse DCF Dashboard Analysis Example\n\n\nUsing the dashboard involves a “Reality Check” workflow:\n\nFetch Data: Input a ticker (e.g., AAPL or MGNI). The tool pulls the baseline revenue and current market price.\nSet the Risk Hurdle: Adjust the WACC based on the current 10-year Treasury yield and the stock’s risk profile.\nAnalyze the Implied CAGR:\n\nUndervalued: If the Implied CAGR is significantly lower than the historical 5-year average, the market may be too pessimistic.\nOvervalued: If the market expects 20% growth from a company that has matured at 5%, the stock is priced for perfection."
+  },
+  {
+    "objectID": "posts/dcf.html#future-innovation-axis",
+    "href": "posts/dcf.html#future-innovation-axis",
+    "title": "Beyond the Price Target: A Reverse DCF Framework for Expectation Investing",
+    "section": "Future Innovation Axis",
+    "text": "Future Innovation Axis\nThe roadmap for this tool involves shifting from deterministic outputs to probabilistic ones:\n\nMonte Carlo Simulations: Instead of a single Implied Growth number, running 10,000 iterations to show a probability distribution of required growth.\nAutomated Peer Benchmarking: Integrating a “Comps” feature that automatically pulls industry-average margins and WACCs to see if a company is an outlier.\nSensitivity Heatmaps: Generating 2D matrices showing how Implied Growth shifts across a range of FCF Margins and WACC scenarios simultaneously.\n\n\nThis project is a fusion of financial engineering and data science, designed to turn abstract market sentiment into hard, actionable numbers."
+  },
+  {
+    "objectID": "posts/dcf.html#technical-implementation-under-the-hood",
+    "href": "posts/dcf.html#technical-implementation-under-the-hood",
+    "title": "Beyond the Price Target: A Reverse DCF Framework for Expectation Investing",
+    "section": "Technical Implementation: Under the Hood",
+    "text": "Technical Implementation: Under the Hood\nThe most challenging part of this project was moving from a static formula to a dynamic Numerical Solver. In a standard DCF, you calculate the result directly. In a Reverse DCF, you have to solve for a variable (\\(g\\)) that is buried inside a complex series.\n\nThe Optimization Problem\nThe “Fair Value” (\\(V\\)) of a company is the sum of its discounted future cash flows. Our goal is to find the specific growth rate (\\(g\\)) that makes this value equal to the current Market Cap (\\(M\\)):\n\\[f(g) = \\left( \\sum_{t=1}^{10} \\frac{FCF_0(1+g)^t}{(1+WACC)^t} + \\frac{TV}{(1+WACC)^{10}} \\right) - M = 0\\]\nSince \\(g\\) appears in every term of the 10-year series, we cannot simply use basic algebra to isolate it. Instead, we use Numerical Root-Finding.\n\n\nThe “Hot or Cold” Solver\nI implemented the solver using scipy.optimize.brentq. Think of this as a highly efficient version of “Goal Seek” in Excel.\n\nThe Bracketing: We tell the computer to look for a growth rate between -50% and +100%.\nThe Iteration: The algorithm picks a growth rate, calculates the resulting value, and checks how far it is from the Market Cap.\nThe Convergence: It repeatably narrows the window (using a mix of bisection and inverse quadratic interpolation) until the difference between our calculated value and the market cap is effectively zero.\n\n\n\nData Architecture\nTo ensure the model is robust, the pipeline follows a three-stage process:\n\nIngestion: yfinance pulls raw TTM (Trailing Twelve Month) data.\nValidation: The script handles edge cases, such as companies with negative FCF (which would break a standard growth solver).\nExecution: The Brent method typically finds the “Implied CAGR” in under 0.01 seconds, allowing for the real-time slider experience in the dashboard."
+  },
+  {
+    "objectID": "posts/dcf.html#future-innovation-axis-from-deterministic-to-probabilistic",
+    "href": "posts/dcf.html#future-innovation-axis-from-deterministic-to-probabilistic",
+    "title": "Beyond the Price Target: A Reverse DCF Framework for Expectation Investing",
+    "section": "Future Innovation Axis: From Deterministic to Probabilistic",
+    "text": "Future Innovation Axis: From Deterministic to Probabilistic\nWhile the current dashboard provides a “snapshot” of market expectations, the next evolution of this tool involves moving away from static inputs toward dynamic, data-driven simulations.\n\n1. Statistical Time Series Forecasting (ARIMA/Prophet)\nCurrently, our “Baseline” is a simple historical average. We can replace this with Time Series Modeling to create a more sophisticated “Expected Growth” benchmark.\n\nThe Application: Instead of just comparing the Implied CAGR to last year’s growth, we can use an ARIMA or Exponential Smoothing model to forecast a 3-year revenue trend based on seasonality and momentum.\nThe Value: If the market’s Implied CAGR falls outside the 95% confidence interval of our Time Series forecast, it provides a statistically significant signal of over/undervaluation.\n\n\n\n2. Stochastic Modeling: Geometric Brownian Motion (GBM)\nStock prices and cash flows don’t move in straight lines. We can model the path of a company’s valuation as a Stochastic Process.\n\nThe Application: By treating the company’s Free Cash Flow as a variable following Geometric Brownian Motion (GBM), we can account for “random walks” in profitability.\nThe Value: This allows us to calculate the Probability of Default or the likelihood that a company hits its required growth targets given its historical volatility (\\(\\sigma\\)).\n\n\n\n3. Monte Carlo Expectation Ensembles\nInstead of solving for a single growth rate, we can use Stochastic Simulations to vary WACC, Margins, and Terminal Growth simultaneously across thousands of iterations.\n\nThe Application: We can assign probability distributions (e.g., a Normal distribution for WACC and a Lognormal distribution for Revenue) and run a Monte Carlo simulation.\nThe Result: Instead of a single number, the dashboard would produce a Probability Density Function (PDF) of the stock’s intrinsic value, showing the most likely “Expectation Range.”\n\n\nThis project is a fusion of financial engineering and data science, designed to turn abstract market sentiment into hard, actionable numbers."
   }
 ]

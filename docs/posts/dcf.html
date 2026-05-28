@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kashish Joshipura">
+<meta name="dcterms.date" content="2026-05-11">
 
-<title>Writing – Kashish Joshipura</title>
+<title>Beyond the Price Target: A Reverse DCF Framework for Expectation Investing – Kashish Joshipura</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,28 +25,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0d4a9d19931feb4fee1ddab4b2489000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0d4a9d19931feb4fee1ddab4b2489000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,8 +75,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -246,7 +277,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Kashish Joshipura</span>
     </a>
   </div>
@@ -257,27 +288,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./experience.html"> 
+    <a class="nav-link" href="../experience.html"> 
 <span class="menu-text">Experience</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./skills.html"> 
+    <a class="nav-link" href="../skills.html"> 
 <span class="menu-text">Skills</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blogs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./hobbies.html"> 
+    <a class="nav-link" href="../hobbies.html"> 
 <span class="menu-text">Hobbies</span></a>
   </li>  
 </ul>
@@ -316,14 +347,31 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Writing</h1>
-</div>
+<h1 class="title">Beyond the Price Target: A Reverse DCF Framework for Expectation Investing</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Quantitative Finance</div>
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">Statistics</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kashish Joshipura </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 11, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -333,24 +381,122 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="wip" class="level2">
-<h2 class="anchored" data-anchor-id="wip">WIP !!</h2>
-<p>While I do not intend to follow a niche, I’d occasionally write about:</p>
+<section id="what-is-a-dcf" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-dcf">What is a DCF?</h2>
+<p>A Discounted Cash Flow (DCF) model is the “gold standard” of valuation. It operates on a simple premise: a company is worth the sum of all the cash it will ever make, brought back into today’s dollars.</p>
+<p>To do this, we project Free Cash Flows (FCF) for a decade, add a “Terminal Value” for the years beyond, and apply a <strong>WACC (Weighted Average Cost of Capital)</strong> which is essentially a discount rate that accounts for risk and the time value of money.</p>
+</section>
+<section id="forward-vs.-reverse-dcf-flipping-the-script" class="level2">
+<h2 class="anchored" data-anchor-id="forward-vs.-reverse-dcf-flipping-the-script">Forward vs.&nbsp;Reverse DCF: Flipping the Script</h2>
+<p>The difference between these two models is essentially the direction of the math. To understand it, think of a <strong>Road Trip</strong>:</p>
+<section id="the-forward-dcf-the-estimated-arrival" class="level3">
+<h3 class="anchored" data-anchor-id="the-forward-dcf-the-estimated-arrival">The Forward DCF (The “Estimated Arrival”)</h3>
+<p>In a standard DCF, you are the driver making guesses about the future.</p>
 <ul>
-<li>Data engineering lessons from internships</li>
-<li>Finance</li>
-<li>Career notes for students</li>
-<li>Book reviews</li>
-<li>Show recommendations</li>
+<li><strong>The Inputs:</strong> You decide the speed (Growth Rate) and how much gas you have (Margins).</li>
+<li><strong>The Output:</strong> The model tells you where you will end up (The Fair Value).</li>
+<li><strong>The Example:</strong> “If I drive at 60mph for 5 hours, I will be 300 miles away.”</li>
+<li><strong>The Risk:</strong> If you are too optimistic about your speed, you’ll overestimate how far you’ll get.</li>
 </ul>
-<p>I’ll try to keep stuff organized in groups!</p>
+<p>Esentially, in a <strong>Forward DCF</strong>, the analyst is the driver. You input your assumptions for growth and margins, and the model outputs a “Fair Value.” The danger? Confirmation bias. If you like a stock, you might subconsciously nudge the growth rate higher to justify a “Buy” rating.</p>
+</section>
+<section id="the-reverse-dcf-the-required-speed" class="level3">
+<h3 class="anchored" data-anchor-id="the-reverse-dcf-the-required-speed">The Reverse DCF (The “Required Speed”)</h3>
+<p>In a Reverse DCF, the destination is already set by the market. We work backward to see if the trip is even possible.</p>
+<ul>
+<li><strong>The Input:</strong> You start with the destination (The Current Market Cap).</li>
+<li><strong>The Output:</strong> The model tells you how fast you <em>must</em> drive to get there in time (The Implied Growth Rate).</li>
+<li><strong>The Example:</strong> “The destination is 300 miles away and I only have 3 hours. I <strong>must</strong> drive at 100mph to get there.”</li>
+<li><strong>The Analysis:</strong> You then ask: “Is it realistic to drive 100mph? Does this car even go that fast?”</li>
+</ul>
+<p>Essentially, in a <strong>Reverse DCF</strong> removes the analyst’s bias. Instead of guessing a growth rate to find a price, we take the <strong>current Market Cap</strong> as an objective fact and solve for the <strong>Implied Revenue CAGR</strong> (Compound Annual Growth Rate).</p>
+<p>It changes the question from <em>“What is this stock worth?”</em> to <em>“What must the market believe for this price to be right?”</em></p>
+<p>By flipping the script, we move from <strong>predicting the future</strong> to <strong>auditing the market’s expectations.</strong></p>
+</section>
+</section>
+<section id="project-aim-quantifying-market-optimism" class="level2">
+<h2 class="anchored" data-anchor-id="project-aim-quantifying-market-optimism">Project Aim: Quantifying Market Optimism</h2>
+<p>The goal of this project was to build a production-grade tool that democratizes institutional-level expectations investing. By productionizing this dashboard, I aimed to:</p>
+<ol type="1">
+<li><strong>Isolate the “Expectations Gap”:</strong> Compare what the market expects vs.&nbsp;what a company has historically delivered.</li>
+<li><strong>Stress-Test Assumptions:</strong> Visualize how sensitive a valuation is to shifts in macro factors like interest rates (WACC).</li>
+</ol>
+</section>
+<section id="technical-implementation-under-the-hood" class="level2">
+<h2 class="anchored" data-anchor-id="technical-implementation-under-the-hood">Technical Implementation: Under the Hood</h2>
+<p>The most challenging part of this project was moving from a static formula to a dynamic <strong>Numerical Solver</strong>. In a standard DCF, you calculate the result directly. In a Reverse DCF, you have to solve for a variable (<span class="math inline">\(g\)</span>) that is buried inside a complex series.</p>
+<section id="the-optimization-problem" class="level3">
+<h3 class="anchored" data-anchor-id="the-optimization-problem">The Optimization Problem</h3>
+<p>The “Fair Value” (<span class="math inline">\(V\)</span>) of a company is the sum of its discounted future cash flows. Our goal is to find the specific growth rate (<span class="math inline">\(g\)</span>) that makes this value equal to the current Market Cap (<span class="math inline">\(M\)</span>):</p>
+<p><span class="math display">\[f(g) = \left( \sum_{t=1}^{10} \frac{FCF_0(1+g)^t}{(1+WACC)^t} + \frac{TV}{(1+WACC)^{10}} \right) - M = 0\]</span></p>
+<p>Since <span class="math inline">\(g\)</span> appears in every term of the 10-year series, we cannot simply use basic algebra to isolate it. Instead, we use <strong>Numerical Root-Finding</strong>.</p>
+</section>
+<section id="the-hot-or-cold-solver" class="level3">
+<h3 class="anchored" data-anchor-id="the-hot-or-cold-solver">The “Hot or Cold” Solver</h3>
+<p>I implemented the solver using <code>scipy.optimize.brentq</code>. Think of this as a highly efficient version of “Goal Seek” in Excel.</p>
+<ol type="1">
+<li><strong>The Bracketing:</strong> We tell the computer to look for a growth rate between -50% and +100%.</li>
+<li><strong>The Iteration:</strong> The algorithm picks a growth rate, calculates the resulting value, and checks how far it is from the Market Cap.</li>
+<li><strong>The Convergence:</strong> It repeatably narrows the window (using a mix of bisection and inverse quadratic interpolation) until the difference between our calculated value and the market cap is effectively zero.</li>
+</ol>
+</section>
+<section id="data-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="data-architecture">Data Architecture</h3>
+<p>To ensure the model is robust, the pipeline follows a three-stage process:</p>
+<ul>
+<li><strong>Ingestion:</strong> <code>yfinance</code> pulls raw TTM (Trailing Twelve Month) data.</li>
+<li><strong>Validation:</strong> The script handles edge cases, such as companies with negative FCF (which would break a standard growth solver).</li>
+<li><strong>Execution:</strong> The Brent method typically finds the “Implied CAGR” in under 0.01 seconds, allowing for the real-time slider experience in the dashboard.</li>
+</ul>
+</section>
+</section>
+<section id="how-to-use-interpret-the-results" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-interpret-the-results">How to Use &amp; Interpret the Results</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../plots/dcf_dashboard.png" class="img-fluid figure-img"></p>
+<figcaption>Reverse DCF Dashboard Analysis Example</figcaption>
+</figure>
+</div>
+<p>Using the dashboard involves a “Reality Check” workflow:</p>
+<ol type="1">
+<li><strong>Fetch Data:</strong> Input a ticker (e.g., AAPL or MGNI). The tool pulls the baseline revenue and current market price.</li>
+<li><strong>Set the Risk Hurdle:</strong> Adjust the WACC based on the current 10-year Treasury yield and the stock’s risk profile.</li>
+<li><strong>Analyze the Implied CAGR:</strong>
+<ul>
+<li><p><strong>Undervalued:</strong> If the Implied CAGR is significantly lower than the historical 5-year average, the market may be too pessimistic.</p></li>
+<li><p><strong>Overvalued:</strong> If the market expects 20% growth from a company that has matured at 5%, the stock is priced for perfection.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="future-innovation-axis-from-deterministic-to-probabilistic" class="level2">
+<h2 class="anchored" data-anchor-id="future-innovation-axis-from-deterministic-to-probabilistic">Future Innovation Axis: From Deterministic to Probabilistic</h2>
+<p>While the current dashboard provides a “snapshot” of market expectations, the next evolution of this tool involves moving away from static inputs toward dynamic, data-driven simulations.</p>
+<section id="statistical-time-series-forecasting-arimaprophet" class="level3">
+<h3 class="anchored" data-anchor-id="statistical-time-series-forecasting-arimaprophet">1. Statistical Time Series Forecasting (ARIMA/Prophet)</h3>
+<p>Currently, our “Baseline” is a simple historical average. We can replace this with <strong>Time Series Modeling</strong> to create a more sophisticated “Expected Growth” benchmark.</p>
+<ul>
+<li><strong>The Application:</strong> Instead of just comparing the Implied CAGR to last year’s growth, we can use an <strong>ARIMA</strong> or <strong>Exponential Smoothing</strong> model to forecast a 3-year revenue trend based on seasonality and momentum.</li>
+<li><strong>The Value:</strong> If the market’s Implied CAGR falls outside the 95% confidence interval of our Time Series forecast, it provides a statistically significant signal of over/undervaluation.</li>
+</ul>
+</section>
+<section id="stochastic-modeling-geometric-brownian-motion-gbm" class="level3">
+<h3 class="anchored" data-anchor-id="stochastic-modeling-geometric-brownian-motion-gbm">2. Stochastic Modeling: Geometric Brownian Motion (GBM)</h3>
+<p>Stock prices and cash flows don’t move in straight lines. We can model the path of a company’s valuation as a <strong>Stochastic Process</strong>.</p>
+<ul>
+<li><strong>The Application:</strong> By treating the company’s Free Cash Flow as a variable following <strong>Geometric Brownian Motion (GBM)</strong>, we can account for “random walks” in profitability.</li>
+<li><strong>The Value:</strong> This allows us to calculate the <strong>Probability of Default</strong> or the likelihood that a company hits its required growth targets given its historical volatility (<span class="math inline">\(\sigma\)</span>).</li>
+</ul>
+</section>
+<section id="monte-carlo-expectation-ensembles" class="level3">
+<h3 class="anchored" data-anchor-id="monte-carlo-expectation-ensembles">3. Monte Carlo Expectation Ensembles</h3>
+<p>Instead of solving for a single growth rate, we can use <strong>Stochastic Simulations</strong> to vary WACC, Margins, and Terminal Growth simultaneously across thousands of iterations.</p>
+<ul>
+<li><strong>The Application:</strong> We can assign probability distributions (e.g., a Normal distribution for WACC and a Lognormal distribution for Revenue) and run a Monte Carlo simulation.</li>
+<li><strong>The Result:</strong> Instead of a single number, the dashboard would produce a <strong>Probability Density Function (PDF)</strong> of the stock’s intrinsic value, showing the most likely “Expectation Range.”</li>
+</ul>
 <hr>
-<section id="posts" class="level3">
-<h3 class="anchored" data-anchor-id="posts">Posts</h3>
-<ul>
-<li><a href="./posts/welcome.html">Why Parquet + Arrow Changed Our Ingestion Pipeline</a></li>
-<li><a href="./posts/dcf.html">Reverse DCF(Discounted Cash Flow) Tool</a></li>
-</ul>
+<p><em>This project is a fusion of financial engineering and data science, designed to turn abstract market sentiment into hard, actionable numbers.</em></p>
 
 
 </section>
