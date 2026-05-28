@@ -8,6 +8,7 @@ listing:
   categories: true
   sort-ui: false
   filter-ui: false
+  page-size: 5
 ---
 While I do not intend to follow a niche, I'd occasionally write about:
 
@@ -21,7 +22,48 @@ I'll try to keep stuff organized in groups!
 
 ---
 
-### Posts
+<h3 id="posts-title">Posts</h3>
 
 :::{#post-listing}
 :::
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function updateCount() {
+    // Attempt to read from Quarto's list.js instance if available
+    var lst = window['quarto-listings'] && window['quarto-listings']['listing-post-listing'];
+    var count = 0;
+    if (lst) {
+      count = lst.matchingItems.length;
+    } else {
+      // Fallback: count visible items in the DOM directly
+      var items = document.querySelectorAll('#listing-post-listing .quarto-post');
+      count = Array.from(items).filter(el => getComputedStyle(el).display !== 'none').length;
+    }
+    var title = document.getElementById('posts-title');
+    if (title) {
+      title.innerText = "Posts (" + count + ")";
+    }
+  }
+
+  // Hook into Quarto's loaded callback
+  var oldLoaded = window['quarto-listing-loaded'];
+  window['quarto-listing-loaded'] = function() {
+    if (oldLoaded) oldLoaded();
+    updateCount();
+    var lst = window['quarto-listings'] && window['quarto-listings']['listing-post-listing'];
+    if (lst) {
+      lst.on('updated', updateCount);
+    }
+  };
+
+  // Fallback observer in case Quarto's loaded event is missed
+  var observer = new MutationObserver(updateCount);
+  var listContainer = document.querySelector('#listing-post-listing');
+  if (listContainer) {
+    observer.observe(listContainer, { childList: true, subtree: true, attributes: true });
+  }
+
+  setTimeout(updateCount, 200);
+});
+</script>

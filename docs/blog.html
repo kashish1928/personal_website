@@ -404,8 +404,9 @@ window.Quarto = {
 </ul>
 <p>I’ll try to keep stuff organized in groups!</p>
 <hr>
-<section id="posts" class="level3">
-<h3 class="anchored" data-anchor-id="posts">Posts</h3>
+<h3 id="posts-title" class="anchored">
+Posts
+</h3>
 <div id="listing-post-listing" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
 <div class="quarto-post image-right" data-index="0" data-categories="VW5kZXJncmFkJTJDRGF0YSUyMFNjaWVuY2UlMkNTdGF0aXN0aWNzJTJDQ29tcHV0ZXIlMjBTY2llbmNlJTJDUmVmbGVjdGlvbg==" data-listing-date-sort="1779912000000" data-listing-file-modified-sort="1779999303355" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="986">
@@ -517,10 +518,49 @@ Jan 1, 2026
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  function updateCount() {
+    // Attempt to read from Quarto's list.js instance if available
+    var lst = window['quarto-listings'] && window['quarto-listings']['listing-post-listing'];
+    var count = 0;
+    if (lst) {
+      count = lst.matchingItems.length;
+    } else {
+      // Fallback: count visible items in the DOM directly
+      var items = document.querySelectorAll('#listing-post-listing .quarto-post');
+      count = Array.from(items).filter(el => getComputedStyle(el).display !== 'none').length;
+    }
+    var title = document.getElementById('posts-title');
+    if (title) {
+      title.innerText = "Posts (" + count + ")";
+    }
+  }
+
+  // Hook into Quarto's loaded callback
+  var oldLoaded = window['quarto-listing-loaded'];
+  window['quarto-listing-loaded'] = function() {
+    if (oldLoaded) oldLoaded();
+    updateCount();
+    var lst = window['quarto-listings'] && window['quarto-listings']['listing-post-listing'];
+    if (lst) {
+      lst.on('updated', updateCount);
+    }
+  };
+
+  // Fallback observer in case Quarto's loaded event is missed
+  var observer = new MutationObserver(updateCount);
+  var listContainer = document.querySelector('#listing-post-listing');
+  if (listContainer) {
+    observer.observe(listContainer, { childList: true, subtree: true, attributes: true });
+  }
+
+  setTimeout(updateCount, 200);
+});
+</script>
 
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
