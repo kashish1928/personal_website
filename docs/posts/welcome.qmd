@@ -1,6 +1,7 @@
 ---
 title: "Why Parquet + Arrow Changed Our Ingestion Pipeline"
 date: 2026-01-01
+categories: [Data Engineering, Internship]
 ---
 
 During my internship at Population Data BC, we migrated ingestion pipelines

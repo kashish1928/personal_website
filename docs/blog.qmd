@@ -1,8 +1,14 @@
 ---
-title: "Writing"
+title: "Blogs"
+listing:
+  id: post-listing
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
 ---
-## WIP !!
-
 While I do not intend to follow a niche, I'd occasionally write about:
 
 - Data engineering lessons from internships
@@ -17,5 +23,5 @@ I'll try to keep stuff organized in groups!
 
 ### Posts
 
-- [Why Parquet + Arrow Changed Our Ingestion Pipeline](posts/welcome.qmd)
-- [Reverse DCF(Discounted Cash Flow) Tool](posts/dcf.qmd)
+:::{#post-listing}
+:::
