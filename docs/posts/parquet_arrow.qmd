@@ -1,0 +1,30 @@
+---
+title: "Why Parquet + Arrow Changed Our Ingestion Pipeline"
+date: 2026-01-01
+categories: [Data Engineering, Systems Architecture, Health Informatics]
+---
+
+## The Bottleneck: The Cost of Text-Based Workflows
+
+During my internship at Population Data BC, we faced a classic distributed systems problem: data ingestion and transformation pipelines processing massive, longitudinal health data arrays were hitting severe I/O degradation. 
+
+Historically, these workflows relied on standard CSV formats. While CSVs are highly portable and human-readable, they are structurally disastrous for large-scale analytical workloads. Every time a health researcher wanted to run an analysis on a subset of variables such as tracking a specific patient cohort over a five-year window, the system had to execute a full table scan. The machine spent valuable compute cycles parsing row-delimited strings, dealing with volatile schema drifts, and wasting memory on redundant data duplication. 
+
+To resolve this latency, we migrated our core ingestion pipelines from CSV-based storage to an integrated **Apache Parquet** framework backed by **Apache Arrow** for in-memory operations.
+
+## Architecture: Storage vs. Memory
+
+The success of the migration relied on understanding the fundamental decoupling of efficient *storage* formats from fast *in-memory* analytics.
+
+
+
+### 1. Storage Optimization with Apache Parquet
+Parquet is a binary, hybrid-columnar storage format. Instead of saving data row-by-row, it groups data into horizontal row groups, and then chunks those groups vertically by column. 
+
+- **Column Pruning:** If an analysis only requires 3 features out of a 100-column schema, the execution engine skips the unselected columns entirely at the disk layer.
+- **Dictionary & Bit-Packing Encoding:** Because data types within a single column are identical, compression algorithms operate with massive efficiency. Repeating strings or integers shrink into tiny byte arrays, radically compressing our physical storage footprint.
+
+### 2. In-Memory Power with Apache Arrow
+While Parquet optimizes data at rest, Apache Arrow handles data in flight. Traditional pipelines suffer from serialization/deserialization overhead when passing data from disk to processing memory (e.g., from storage to Python or R execution environments).
+
+Arrow establishes a standardized, columnar in-memory memory format. It allows for **zero-copy data sharing**. When data is loaded from Parquet into an Arrow-backed environment, the memory layout on disk maps directly to RAM. This eliminates the CPU tax of translating data formats, allowing computational engines to process memory arrays at maximum bus speed.

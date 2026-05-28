@@ -1,7 +1,6 @@
 ---
 title: "Beyond the Price Target: A Reverse DCF Framework for Expectation Investing"
 date: 2026-05-11
-author: "Kashish Joshipura"
 categories: [Quantitative Finance, Python, Statistics]
 ---
 

@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-01-01">
 
-<title>experience – Kashish Joshipura</title>
+<title>Why Parquet + Arrow Changed Our Ingestion Pipeline – Kashish Joshipura</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,28 +24,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0d4a9d19931feb4fee1ddab4b2489000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0d4a9d19931feb4fee1ddab4b2489000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -246,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Kashish Joshipura</span>
     </a>
   </div>
@@ -257,27 +258,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./experience.html" aria-current="page"> 
+    <a class="nav-link" href="../experience.html"> 
 <span class="menu-text">Experience</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./skills.html"> 
+    <a class="nav-link" href="../skills.html"> 
 <span class="menu-text">Skills</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blogs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./hobbies.html"> 
+    <a class="nav-link" href="../hobbies.html"> 
 <span class="menu-text">Hobbies</span></a>
   </li>  
 </ul>
@@ -311,55 +312,63 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Why Parquet + Arrow Changed Our Ingestion Pipeline</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Data Engineering</div>
+    <div class="quarto-category">Systems Architecture</div>
+    <div class="quarto-category">Health Informatics</div>
+  </div>
+  </div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 1, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
-<section id="professional-experience" class="level2">
-<h2 class="anchored" data-anchor-id="professional-experience">🛠️ Professional Experience</h2>
-<div class="grid">
-<section id="population-data-bc" class="level3 g-col-12 g-col-md-6 experience-card">
-<h3 class="anchored" data-anchor-id="population-data-bc">🏥 Population Data BC</h3>
-<p><strong>ML Engineer</strong> <em>Sep 2025 – Apr 2026</em></p>
-<p><strong>The Mission:</strong> Optimizing the bridge between massive provincial health datasets and academic research.</p>
-<p><strong>Key Contributions:</strong></p>
-<ul>
-<li><strong>Performance Engineering:</strong> Led the transition from legacy CSV ingestion to a high-performance <strong>Apache Parquet</strong> and <strong>Apache Arrow</strong> stack.</li>
-<li><strong>Infrastructure &amp; Automation:</strong> Re-engineered core pipelines into a container-ready architecture utilizing <strong>Airflow</strong> orchestration and <strong>DuckDB</strong> for lightning-fast, reproducible local processing.</li>
-<li><strong>Intelligent Document Processing:</strong> Integrated <strong>OCR</strong> and <strong>Retrieval-Augmented Generation (RAG)</strong> via <strong>LlamaIndex</strong> to extract critical insights, generate key summaries, and flags application deficiencies of research requests.</li>
-<li><strong>Statistical Modeling:</strong> Developed a high-fidelity synthetic data generator utilizing complex statistical distributions (including <strong>Log-Normal</strong>, <strong>Poisson</strong>, and <strong>Normal</strong>) to accurately model sensitive variable relationships for research requests.</li>
-</ul>
-<p><strong>Stack:</strong> <code>Python</code> <code>LlamaIndex</code> <code>Airflow</code> <code>DuckDB</code> <code>Arrow</code> <code>Parquet</code> <code>OCR</code> <code>SciPy</code></p>
+</header>
+
+
+<section id="the-bottleneck-the-cost-of-text-based-workflows" class="level2">
+<h2 class="anchored" data-anchor-id="the-bottleneck-the-cost-of-text-based-workflows">The Bottleneck: The Cost of Text-Based Workflows</h2>
+<p>During my internship at Population Data BC, we faced a classic distributed systems problem: data ingestion and transformation pipelines processing massive, longitudinal health data arrays were hitting severe I/O degradation.</p>
+<p>Historically, these workflows relied on standard CSV formats. While CSVs are highly portable and human-readable, they are structurally disastrous for large-scale analytical workloads. Every time a health researcher wanted to run an analysis on a subset of variables such as tracking a specific patient cohort over a five-year window, the system had to execute a full table scan. The machine spent valuable compute cycles parsing row-delimited strings, dealing with volatile schema drifts, and wasting memory on redundant data duplication.</p>
+<p>To resolve this latency, we migrated our core ingestion pipelines from CSV-based storage to an integrated <strong>Apache Parquet</strong> framework backed by <strong>Apache Arrow</strong> for in-memory operations.</p>
 </section>
-<section id="samsung-rd" class="level3 g-col-12 g-col-md-6 experience-card">
-<h3 class="anchored" data-anchor-id="samsung-rd">📱 Samsung R&amp;D</h3>
-<p><strong>Data Engineer</strong> <em>Sep 2024 – Aug 2025</em></p>
-<p><strong>The Mission:</strong> Managing global-scale data infrastructure and privacy compliance.</p>
-<p><strong>Key Contributions:</strong></p>
+<section id="architecture-storage-vs.-memory" class="level2">
+<h2 class="anchored" data-anchor-id="architecture-storage-vs.-memory">Architecture: Storage vs.&nbsp;Memory</h2>
+<p>The success of the migration relied on understanding the fundamental decoupling of efficient <em>storage</em> formats from fast <em>in-memory</em> analytics.</p>
+<section id="storage-optimization-with-apache-parquet" class="level3">
+<h3 class="anchored" data-anchor-id="storage-optimization-with-apache-parquet">1. Storage Optimization with Apache Parquet</h3>
+<p>Parquet is a binary, hybrid-columnar storage format. Instead of saving data row-by-row, it groups data into horizontal row groups, and then chunks those groups vertically by column.</p>
 <ul>
-<li><strong>High-Volume Orchestration:</strong> Managed the real-time processing of <strong>500M+ records per day</strong>. I deployed automated CI/CD pipelines via GitHub Actions that handled dynamic PII (Personal Identifiable Information) tagging across 10+ data streams.</li>
-<li><strong>Data Reliability:</strong> Owned the orchestration of cross-region transfers for <strong>200+ datasets</strong>, maintaining a strict <strong>99% availability</strong> SLA for downstream analytics teams.</li>
-<li><strong>Analytics Engineering:</strong> Leveraged <strong>dbt (data build tool)</strong> to transform raw FastAPI-backed application data into actionable insights, automating the workflows for over 50 executive Tableau dashboards.</li>
+<li><strong>Column Pruning:</strong> If an analysis only requires 3 features out of a 100-column schema, the execution engine skips the unselected columns entirely at the disk layer.</li>
+<li><strong>Dictionary &amp; Bit-Packing Encoding:</strong> Because data types within a single column are identical, compression algorithms operate with massive efficiency. Repeating strings or integers shrink into tiny byte arrays, radically compressing our physical storage footprint.</li>
 </ul>
-<p><strong>Stack:</strong> <code>AWS Redshift</code> <code>dbt</code> <code>Airflow</code> <code>GitHub Actions</code> <code>Tableau</code></p>
 </section>
-<section id="vancouver-coastal-health" class="level3 g-col-12 experience-card">
-<h3 class="anchored" data-anchor-id="vancouver-coastal-health">💉 Vancouver Coastal Health</h3>
-<p><strong>Software Developer Intern</strong> <em>May 2024 – Aug 2024</em></p>
-<p><strong>The Mission:</strong> Enhancing data integrity for clinical informatics systems.</p>
-<p><strong>Key Contributions:</strong></p>
-<ul>
-<li><strong>Validation Frameworks:</strong> Developed a custom <strong>R package</strong> using the <code>testthat</code> framework to enforce data quality at the ingestion layer. This prevented “dirty data” from entering downstream clinical pipelines.</li>
-<li><strong>Modern Storage:</strong> Spearheaded the migration of historical clinical records from unstructured flat files to a centralized <strong>SQLite-based storage</strong> system, enabling faster retrieval and more complex analytical queries.</li>
-<li><strong>Pipeline Maintenance:</strong> Maintained and optimized critical analytical pipelines that support real-time clinical informatics, ensuring healthcare providers had access to validated data.</li>
-</ul>
-<p><strong>Stack:</strong> <code>R</code> <code>testthat</code> <code>SQLite</code> <code>Clinical Informatics</code> <code>Git</code></p>
-</section>
-</div>
+<section id="in-memory-power-with-apache-arrow" class="level3">
+<h3 class="anchored" data-anchor-id="in-memory-power-with-apache-arrow">2. In-Memory Power with Apache Arrow</h3>
+<p>While Parquet optimizes data at rest, Apache Arrow handles data in flight. Traditional pipelines suffer from serialization/deserialization overhead when passing data from disk to processing memory (e.g., from storage to Python or R execution environments).</p>
+<p>Arrow establishes a standardized, columnar in-memory memory format. It allows for <strong>zero-copy data sharing</strong>. When data is loaded from Parquet into an Arrow-backed environment, the memory layout on disk maps directly to RAM. This eliminates the CPU tax of translating data formats, allowing computational engines to process memory arrays at maximum bus speed.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

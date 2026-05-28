@@ -1,0 +1,112 @@
+---
+title: "10 Courses That Shaped My Degree: A 6th-Year Retrospective"
+subtitle: "Looking back at the math, stats, systems, and surprises that defined my undergrad journey."
+date: 2026-05-28
+categories: [Undergrad, Data Science, Statistics, Computer Science, Reflection]
+---
+
+Heading into my sixth and final year, it’s strange to look back at the sheer variety of classrooms I’ve sat in. A quantitative degree often looks uniform on paper, an endless stream of formulas, code blocks, and datasets. But the reality of an undergraduate journey is far more dynamic. 
+
+The courses we choose don't just fill credit requirements; they shape how we think, how we handle scale, and how we communicate. Across Statistics, Computer Science, Mathematics, and elective breadth, these are the 10 courses that fundamentally left a mark on how I approach problem-solving.
+
+---
+
+## 📊 The Core Stats & Modeling Powerhouses
+
+These courses form the bedrock of my analytical toolkit, moving past static data snapshots into temporal patterns and structural theory.
+
+### STAT 443: Time Series and Forecasting
+Most machine learning courses assume your data points are independent and identically distributed. **STAT 443** shatters that assumption by introducing the time dimension. 
+
+* **The Core Shift:** Learning to decompose chaotic historical signals into structured trends, seasonal cycles, and stationary noise using stochastic frameworks like ARMA and ARIMA.
+* **Why it Matters:** It bridges the gap between explaining the past and probabilistically forecasting the future—an essential framework for everything from financial modeling to resource allocation.
+
+### STAT 406: Methods for Statistical Learning
+It’s easy to run `model.fit()`, but understanding *why* a model works under the hood is what separates a code technician from an engineer.
+
+* **The Core Shift:** Shifting focus from raw software execution to the mathematical soul of machine learning. 
+* **Why it Matters:** Diving deep into the bias-variance tradeoff, regularization strategies (Lasso and Ridge), and tree-based architectures gives you the intuition needed to diagnose why a model fails in production.
+
+---
+
+## 🧮 The Mathematical Underpinnings
+
+Before you can build robust algorithms, you have to understand the foundational machinery of probability, randomness, and spatial transformations.
+
+### MATH 303: Introduction to Stochastic Processes
+The real world isn't deterministic, and **MATH 303** forces you to embrace true randomness.
+
+* **The Core Shift:** Moving from static probability to dynamic, memoryless systems over time.
+* **Why it Matters:** Studying Markov chains and Poisson processes completely changes your worldview. It provides the exact mathematical grammar needed to model queueing systems, network traffic flow, and random walks.
+
+### MATH 307: Applied Linear Algebra
+If calculus is the engine of optimization, linear algebra is the structural framework of all modern data engineering.
+
+* **The Core Shift:** Moving past rote row reduction to understand high-dimensional spatial transformations and matrix decompositions.
+* **Why it Matters:** Concepts like Singular Value Decomposition (SVD), projections, and eigenvalues are the literal math underlying modern recommendation engines, image compression, and lower-dimensional embeddings.
+
+---
+
+## 💻 Systems & Computational Heavyweights
+
+An elegant model is useless if it can’t scale or run efficiently. These courses focus heavily on optimization, architecture, and computational rigor.
+
+### CPSC 404: Advanced Database Management Systems
+Data science often treats databases like abstract query endpoints. This course rips open the black box to show how data is actually written to, indexed, and retrieved from disk.
+
+* **The Core Shift:** Studying the internal engineering of database engines rather than just writing SQL queries.
+* **Why it Matters:** Understanding B+ tree indexing, buffer management, query optimization plans, and ACID transaction mechanics is foundational for designing high-performance data pipelines that don't bottleneck at scale.
+
+### CPSC 320: Intermediate Algorithm Design and Analysis
+This is the ultimate mental boot camp for breaking down abstract, highly ambiguous computational problems.
+
+* **The Core Shift:** Learning how to systematically approach complex puzzles using proven algorithmic paradigms.
+* **Why it Matters:** Mastering divide-and-conquer, greedy choices, and dynamic programming isn't about memorizing code snippets—it's about training your brain to rigorously prove correctness and optimize time and space complexity under strict constraints.
+
+---
+
+## 🛠️ Modern Practice & Reproducibility
+
+These courses ground theoretical knowledge in modern, industry-standard engineering practices, focusing on collaboration and execution.
+
+### DSCI 310: Reproducible and Trustworthy Data Science
+A data analysis is only as good as its reproducibility. If another engineer cannot replicate your results with a single command, the analysis is fundamentally brittle.
+
+* **The Core Shift:** Shifting the definition of "done" from a working local notebook to an automated, fully containerized pipeline.
+* **Why it Matters:** This course instills a rigorous "DevOps for Data" mindset—standardizing version control workflows, automated testing, continuous integration, and Makefile orchestration.
+
+### DSCI 100: Introduction to Data Science
+The genesis of it all. This was the entry point that made programmatic data exploration click for the first time.
+
+* **The Core Shift:** Transitioning from static spreadsheet calculation to dynamic, reproducible scripting in R or Python.
+* **Why it Matters:** It provides the critical baseline workflow—data wrangling, cleaning, visualization, and basic statistical inference—that makes advanced upper-year concepts digestible.
+
+---
+
+## 🗺️ Interdisciplinary & Communication Breadth
+
+True domain expertise requires stepping out of quantitative bubbles to look at human behavior, micro-incentives, and non-verbal communication frameworks.
+
+### ECON 310: Microeconomic Theory
+Data never exists in a vacuum; it is almost always generated by human decisions, market incentives, and resource constraints.
+
+* **The Core Shift:** Applying rigorous mathematical optimization directly to human choices, game theory, and market dynamics.
+* **Why it Matters:** It bridges the gap between raw statistical tracking and structural economic incentives, helping you understand *why* consumers or systems act the way they do.
+
+### ASL 100: American Sign Language I
+Stepping entirely out of the quantitative comfort zone of monitors, terminals, and mathematical syntax.
+
+* **The Core Shift:** Learning a rich, structural, purely visual and spatial language while immersing yourself in the history and culture of the Deaf community.
+* **Why it Matters:** This was a profound lesson in communication mechanics and empathy. It forces you to think about linguistics, expression, and spatial awareness completely detached from vocal patterns—a refreshing break that builds an entirely different part of your brain.
+
+---
+
+## 🏁 The Final Lap
+
+Looking at this list, the intersection is clear:
+
+* **Computer Science** gives you the systems to build and scale.
+* **Statistics & Mathematics** provide the analytical framework to extract deep, robust truths from noise.
+* **Economics & Linguistics** keep you grounded in human behavior and clear, empathetic communication.
+
+As I head into my final year to tackle capstones and system designs, it’s a toolkit I’m incredibly grateful to have built.

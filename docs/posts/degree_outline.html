@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-01-01">
+<meta name="dcterms.date" content="2026-05-28">
 
-<title>Why Parquet + Arrow Changed Our Ingestion Pipeline – Kashish Joshipura</title>
+<title>10 Courses That Shaped My Degree: A 6th-Year Retrospective – Kashish Joshipura</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -317,10 +317,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Why Parquet + Arrow Changed Our Ingestion Pipeline</h1>
+<h1 class="title">10 Courses That Shaped My Degree: A 6th-Year Retrospective</h1>
+<p class="subtitle lead">Looking back at the math, stats, systems, and surprises that defined my undergrad journey.</p>
   <div class="quarto-categories">
-    <div class="quarto-category">Data Engineering</div>
-    <div class="quarto-category">Internship</div>
+    <div class="quarto-category">Undergrad</div>
+    <div class="quarto-category">Data Science</div>
+    <div class="quarto-category">Statistics</div>
+    <div class="quarto-category">Computer Science</div>
+    <div class="quarto-category">Reflection</div>
   </div>
   </div>
 
@@ -332,7 +336,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 1, 2026</p>
+      <p class="date">May 28, 2026</p>
     </div>
   </div>
   
@@ -344,15 +348,123 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>During my internship at Population Data BC, we migrated ingestion pipelines from CSV-based workflows to Apache Parquet with Arrow-backed in-memory analytics.</p>
-<section id="key-takeaways" class="level3">
-<h3 class="anchored" data-anchor-id="key-takeaways">Key Takeaways</h3>
+<p>Heading into my sixth and final year, it’s strange to look back at the sheer variety of classrooms I’ve sat in. A quantitative degree often looks uniform on paper, an endless stream of formulas, code blocks, and datasets. But the reality of an undergraduate journey is far more dynamic.</p>
+<p>The courses we choose don’t just fill credit requirements; they shape how we think, how we handle scale, and how we communicate. Across Statistics, Computer Science, Mathematics, and elective breadth, these are the 10 courses that fundamentally left a mark on how I approach problem-solving.</p>
+<hr>
+<section id="the-core-stats-modeling-powerhouses" class="level2">
+<h2 class="anchored" data-anchor-id="the-core-stats-modeling-powerhouses">📊 The Core Stats &amp; Modeling Powerhouses</h2>
+<p>These courses form the bedrock of my analytical toolkit, moving past static data snapshots into temporal patterns and structural theory.</p>
+<section id="stat-443-time-series-and-forecasting" class="level3">
+<h3 class="anchored" data-anchor-id="stat-443-time-series-and-forecasting">STAT 443: Time Series and Forecasting</h3>
+<p>Most machine learning courses assume your data points are independent and identically distributed. <strong>STAT 443</strong> shatters that assumption by introducing the time dimension.</p>
 <ul>
-<li>Columnar formats dramatically reduce I/O</li>
-<li>Arrow enables zero-copy data sharing</li>
-<li>Researcher productivity improved immediately</li>
+<li><strong>The Core Shift:</strong> Learning to decompose chaotic historical signals into structured trends, seasonal cycles, and stationary noise using stochastic frameworks like ARMA and ARIMA.</li>
+<li><strong>Why it Matters:</strong> It bridges the gap between explaining the past and probabilistically forecasting the future—an essential framework for everything from financial modeling to resource allocation.</li>
 </ul>
-<p>More technical deep-dive coming soon.</p>
+</section>
+<section id="stat-406-methods-for-statistical-learning" class="level3">
+<h3 class="anchored" data-anchor-id="stat-406-methods-for-statistical-learning">STAT 406: Methods for Statistical Learning</h3>
+<p>It’s easy to run <code>model.fit()</code>, but understanding <em>why</em> a model works under the hood is what separates a code technician from an engineer.</p>
+<ul>
+<li><strong>The Core Shift:</strong> Shifting focus from raw software execution to the mathematical soul of machine learning.</li>
+<li><strong>Why it Matters:</strong> Diving deep into the bias-variance tradeoff, regularization strategies (Lasso and Ridge), and tree-based architectures gives you the intuition needed to diagnose why a model fails in production.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="the-mathematical-underpinnings" class="level2">
+<h2 class="anchored" data-anchor-id="the-mathematical-underpinnings">🧮 The Mathematical Underpinnings</h2>
+<p>Before you can build robust algorithms, you have to understand the foundational machinery of probability, randomness, and spatial transformations.</p>
+<section id="math-303-introduction-to-stochastic-processes" class="level3">
+<h3 class="anchored" data-anchor-id="math-303-introduction-to-stochastic-processes">MATH 303: Introduction to Stochastic Processes</h3>
+<p>The real world isn’t deterministic, and <strong>MATH 303</strong> forces you to embrace true randomness.</p>
+<ul>
+<li><strong>The Core Shift:</strong> Moving from static probability to dynamic, memoryless systems over time.</li>
+<li><strong>Why it Matters:</strong> Studying Markov chains and Poisson processes completely changes your worldview. It provides the exact mathematical grammar needed to model queueing systems, network traffic flow, and random walks.</li>
+</ul>
+</section>
+<section id="math-307-applied-linear-algebra" class="level3">
+<h3 class="anchored" data-anchor-id="math-307-applied-linear-algebra">MATH 307: Applied Linear Algebra</h3>
+<p>If calculus is the engine of optimization, linear algebra is the structural framework of all modern data engineering.</p>
+<ul>
+<li><strong>The Core Shift:</strong> Moving past rote row reduction to understand high-dimensional spatial transformations and matrix decompositions.</li>
+<li><strong>Why it Matters:</strong> Concepts like Singular Value Decomposition (SVD), projections, and eigenvalues are the literal math underlying modern recommendation engines, image compression, and lower-dimensional embeddings.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="systems-computational-heavyweights" class="level2">
+<h2 class="anchored" data-anchor-id="systems-computational-heavyweights">💻 Systems &amp; Computational Heavyweights</h2>
+<p>An elegant model is useless if it can’t scale or run efficiently. These courses focus heavily on optimization, architecture, and computational rigor.</p>
+<section id="cpsc-404-advanced-database-management-systems" class="level3">
+<h3 class="anchored" data-anchor-id="cpsc-404-advanced-database-management-systems">CPSC 404: Advanced Database Management Systems</h3>
+<p>Data science often treats databases like abstract query endpoints. This course rips open the black box to show how data is actually written to, indexed, and retrieved from disk.</p>
+<ul>
+<li><strong>The Core Shift:</strong> Studying the internal engineering of database engines rather than just writing SQL queries.</li>
+<li><strong>Why it Matters:</strong> Understanding B+ tree indexing, buffer management, query optimization plans, and ACID transaction mechanics is foundational for designing high-performance data pipelines that don’t bottleneck at scale.</li>
+</ul>
+</section>
+<section id="cpsc-320-intermediate-algorithm-design-and-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="cpsc-320-intermediate-algorithm-design-and-analysis">CPSC 320: Intermediate Algorithm Design and Analysis</h3>
+<p>This is the ultimate mental boot camp for breaking down abstract, highly ambiguous computational problems.</p>
+<ul>
+<li><strong>The Core Shift:</strong> Learning how to systematically approach complex puzzles using proven algorithmic paradigms.</li>
+<li><strong>Why it Matters:</strong> Mastering divide-and-conquer, greedy choices, and dynamic programming isn’t about memorizing code snippets—it’s about training your brain to rigorously prove correctness and optimize time and space complexity under strict constraints.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="modern-practice-reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="modern-practice-reproducibility">🛠️ Modern Practice &amp; Reproducibility</h2>
+<p>These courses ground theoretical knowledge in modern, industry-standard engineering practices, focusing on collaboration and execution.</p>
+<section id="dsci-310-reproducible-and-trustworthy-data-science" class="level3">
+<h3 class="anchored" data-anchor-id="dsci-310-reproducible-and-trustworthy-data-science">DSCI 310: Reproducible and Trustworthy Data Science</h3>
+<p>A data analysis is only as good as its reproducibility. If another engineer cannot replicate your results with a single command, the analysis is fundamentally brittle.</p>
+<ul>
+<li><strong>The Core Shift:</strong> Shifting the definition of “done” from a working local notebook to an automated, fully containerized pipeline.</li>
+<li><strong>Why it Matters:</strong> This course instills a rigorous “DevOps for Data” mindset—standardizing version control workflows, automated testing, continuous integration, and Makefile orchestration.</li>
+</ul>
+</section>
+<section id="dsci-100-introduction-to-data-science" class="level3">
+<h3 class="anchored" data-anchor-id="dsci-100-introduction-to-data-science">DSCI 100: Introduction to Data Science</h3>
+<p>The genesis of it all. This was the entry point that made programmatic data exploration click for the first time.</p>
+<ul>
+<li><strong>The Core Shift:</strong> Transitioning from static spreadsheet calculation to dynamic, reproducible scripting in R or Python.</li>
+<li><strong>Why it Matters:</strong> It provides the critical baseline workflow—data wrangling, cleaning, visualization, and basic statistical inference—that makes advanced upper-year concepts digestible.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="interdisciplinary-communication-breadth" class="level2">
+<h2 class="anchored" data-anchor-id="interdisciplinary-communication-breadth">🗺️ Interdisciplinary &amp; Communication Breadth</h2>
+<p>True domain expertise requires stepping out of quantitative bubbles to look at human behavior, micro-incentives, and non-verbal communication frameworks.</p>
+<section id="econ-310-microeconomic-theory" class="level3">
+<h3 class="anchored" data-anchor-id="econ-310-microeconomic-theory">ECON 310: Microeconomic Theory</h3>
+<p>Data never exists in a vacuum; it is almost always generated by human decisions, market incentives, and resource constraints.</p>
+<ul>
+<li><strong>The Core Shift:</strong> Applying rigorous mathematical optimization directly to human choices, game theory, and market dynamics.</li>
+<li><strong>Why it Matters:</strong> It bridges the gap between raw statistical tracking and structural economic incentives, helping you understand <em>why</em> consumers or systems act the way they do.</li>
+</ul>
+</section>
+<section id="asl-100-american-sign-language-i" class="level3">
+<h3 class="anchored" data-anchor-id="asl-100-american-sign-language-i">ASL 100: American Sign Language I</h3>
+<p>Stepping entirely out of the quantitative comfort zone of monitors, terminals, and mathematical syntax.</p>
+<ul>
+<li><strong>The Core Shift:</strong> Learning a rich, structural, purely visual and spatial language while immersing yourself in the history and culture of the Deaf community.</li>
+<li><strong>Why it Matters:</strong> This was a profound lesson in communication mechanics and empathy. It forces you to think about linguistics, expression, and spatial awareness completely detached from vocal patterns—a refreshing break that builds an entirely different part of your brain.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="the-final-lap" class="level2">
+<h2 class="anchored" data-anchor-id="the-final-lap">🏁 The Final Lap</h2>
+<p>Looking at this list, the intersection is clear:</p>
+<ul>
+<li><strong>Computer Science</strong> gives you the systems to build and scale.</li>
+<li><strong>Statistics &amp; Mathematics</strong> provide the analytical framework to extract deep, robust truths from noise.</li>
+<li><strong>Economics &amp; Linguistics</strong> keep you grounded in human behavior and clear, empathetic communication.</li>
+</ul>
+<p>As I head into my final year to tackle capstones and system designs, it’s a toolkit I’m incredibly grateful to have built.</p>
 
 
 </section>

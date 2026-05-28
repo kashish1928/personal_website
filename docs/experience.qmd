@@ -4,23 +4,23 @@
 
 ::: {.g-col-12 .g-col-md-6 .experience-card}
 ### 🏥 Population Data BC
-**Data Engineer Intern** *Sept 2025 – Present*
+**ML Engineer** *Sep 2025 – Apr 2026*
 
 **The Mission:** Optimizing the bridge between massive provincial health datasets and academic research.
 
 **Key Contributions:**
 
-* **Performance Engineering:** Led the transition from legacy CSV ingestion to a high-performance **Apache Parquet** and **Apache Arrow** stack. This architecture shift slashed researcher data ingestion times by **60%** and reduced query latency by **40%**.
-* **Infrastructure Modernization:** Re-engineered core pipelines into a modern, container-ready architecture. I implemented **Airflow** orchestration paired with **DuckDB** to allow for lightning-fast, reproducible local processing of large-scale records.
-* **Reliability:** Established a "DevOps for Data" culture by building Python ETL pipelines reinforced with unit tests, automated logging, and comprehensive documentation.
+* **Performance Engineering:** Led the transition from legacy CSV ingestion to a high-performance **Apache Parquet** and **Apache Arrow** stack.
+* **Infrastructure & Automation:** Re-engineered core pipelines into a container-ready architecture utilizing **Airflow** orchestration and **DuckDB** for lightning-fast, reproducible local processing.
+* **Intelligent Document Processing:** Integrated **OCR** and **Retrieval-Augmented Generation (RAG)** via **LlamaIndex** to extract critical insights, generate key summaries, and flags application deficiencies of research requests.
+* **Statistical Modeling:** Developed a high-fidelity synthetic data generator utilizing complex statistical distributions (including **Log-Normal**, **Poisson**, and **Normal**) to accurately model sensitive variable relationships for research requests.
 
-
-**Stack:** `Python` `Airflow` `DuckDB` `Arrow` `Parquet`
+**Stack:** `Python` `LlamaIndex` `Airflow` `DuckDB` `Arrow` `Parquet` `OCR` `SciPy`
 :::
 
 ::: {.g-col-12 .g-col-md-6 .experience-card}
 ### 📱 Samsung R&D
-**Data Engineer Intern** *Sep 2024 – Aug 2025*
+**Data Engineer** *Sep 2024 – Aug 2025*
 
 **The Mission:** Managing global-scale data infrastructure and privacy compliance.
 
