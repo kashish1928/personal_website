@@ -2,6 +2,7 @@
   {
     "listing": "/blog.html",
     "items": [
+      "/posts/travel.html",
       "/posts/degree_outline.html",
       "/posts/dcf.html",
       "/posts/parquet_arrow.html"

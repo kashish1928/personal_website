@@ -129,7 +129,8 @@ body.quarto-dark .navbar {
 /* ================== Dark Mode for Experience ================== */
 
 /* 1. If you want the cards to turn DARK with LIGHT text (Standard Dark Mode) */
-body.quarto-dark .experience-card {
+body.quarto-dark .experience-card,
+body.quarto-dark .card {
     background-color: #252525 !important;
     /* Dark background */
     border-color: #444 !important;
@@ -141,7 +142,12 @@ body.quarto-dark .experience-card p,
 body.quarto-dark .experience-card li,
 body.quarto-dark .experience-card strong,
 body.quarto-dark .experience-card em,
-body.quarto-dark .experience-card span {
+body.quarto-dark .experience-card span,
+body.quarto-dark .card p,
+body.quarto-dark .card li,
+body.quarto-dark .card strong,
+body.quarto-dark .card em,
+body.quarto-dark .card span {
     color: #e0e0e0 !important;
 }
 

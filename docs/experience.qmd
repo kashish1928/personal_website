@@ -36,7 +36,7 @@
 
 ::: {.g-col-12 .experience-card}
 ### 💉 Vancouver Coastal Health
-**Software Developer Intern** *May 2024 – Aug 2024*
+**Software Developer** *May 2024 – Aug 2024*
 
 **The Mission:** Enhancing data integrity for clinical informatics systems.
 
