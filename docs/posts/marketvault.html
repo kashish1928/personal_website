@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-08-17">
 
-<title>Blogs – Kashish Joshipura</title>
+<title>Building MarketVault: A Modern Data Engineering Stack for Financial Analytics – Kashish Joshipura</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,30 +24,28 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0d4a9d19931feb4fee1ddab4b2489000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0d4a9d19931feb4fee1ddab4b2489000.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,70 +73,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-post-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-post-listing'] = new List('listing-post-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+<body class="nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -306,7 +247,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Kashish Joshipura</span>
     </a>
   </div>
@@ -317,27 +258,27 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./experience.html"> 
+    <a class="nav-link" href="../experience.html"> 
 <span class="menu-text">Experience</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./skills.html"> 
+    <a class="nav-link" href="../skills.html"> 
 <span class="menu-text">Skills</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> 
+    <a class="nav-link" href="../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./blog.html" aria-current="page"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blogs</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./hobbies.html"> 
+    <a class="nav-link" href="../hobbies.html"> 
 <span class="menu-text">Hobbies</span></a>
   </li>  
 </ul>
@@ -369,22 +310,36 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="QXBhY2hlJTIwQWlyZmxvdw==">Apache Airflow <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QnVja2V0LUxpc3Q=">Bucket-List <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q29tcHV0ZXIlMjBTY2llbmNl">Computer Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMEVuZ2luZWVyaW5n">Data Engineering <span class="quarto-category-count">(2)</span></div><div class="category" data-category="RGF0YSUyMFNjaWVuY2U=">Data Science <span class="quarto-category-count">(1)</span></div><div class="category" data-category="ZGJ0">dbt <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RG9ja2Vy">Docker <span class="quarto-category-count">(1)</span></div><div class="category" data-category="SGVhbHRoJTIwSW5mb3JtYXRpY3M=">Health Informatics <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGVyc29uYWw=">Personal <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UHl0aG9u">Python <span class="quarto-category-count">(2)</span></div><div class="category" data-category="UXVhbnRpdGF0aXZlJTIwRmluYW5jZQ==">Quantitative Finance <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVmbGVjdGlvbg==">Reflection <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U1FM">SQL <span class="quarto-category-count">(1)</span></div><div class="category" data-category="U3RhdGlzdGljcw==">Statistics <span class="quarto-category-count">(2)</span></div><div class="category" data-category="U3lzdGVtcyUyMEFyY2hpdGVjdHVyZQ==">Systems Architecture <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VHJhdmVs">Travel <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VW5kZXJncmFk">Undergrad <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blogs</h1>
-</div>
+<h1 class="title">Building MarketVault: A Modern Data Engineering Stack for Financial Analytics</h1>
+<p class="subtitle lead">An architectural breakdown of MarketVault, a containerized, end-to-end data pipeline built with Apache Airflow 3, PostgreSQL, dbt, and Apache Superset to ingest, transform, and visualize financial market data.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Data Engineering</div>
+    <div class="quarto-category">Python</div>
+    <div class="quarto-category">SQL</div>
+    <div class="quarto-category">Apache Airflow</div>
+    <div class="quarto-category">dbt</div>
+    <div class="quarto-category">Docker</div>
+  </div>
+  </div>
 
 
 
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 17, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -394,249 +349,106 @@ window.Quarto = {
 </header>
 
 
-<p>While I do not intend to follow a niche, I’d occasionally write about:</p>
-<ul>
-<li>Data engineering lessons from internships</li>
-<li>Finance</li>
-<li>Career notes for students</li>
-<li>Book reviews</li>
-<li>Show recommendations</li>
-</ul>
-<p>I’ll try to keep stuff organized in groups!</p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>In quantitative finance and data engineering, managing financial datasets requires more than just fetching prices via an API. To build reliable analytical models, you need a robust, production-ready stack that handles scheduled ingestion, enforces data quality tests, modularizes data transformations, and serves dynamic dashboards.</p>
+<p>To solve this, I built <strong><a href="https://github.com/kashish1928/MarketVault">MarketVault</a></strong>—a modern, containerized data engineering pipeline and platform. MarketVault orchestrates market data ingestion (<code>yfinance</code>), handles analytical modeling via <strong>dbt</strong>, coordinates workflows using <strong>Apache Airflow 3</strong>, and presents analytics using <strong>Apache Superset</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../plots/marketvault_test_dashboard.png" class="img-fluid figure-img"></p>
+<figcaption>Marketvault example dashboard</figcaption>
+</figure>
+</div>
 <hr>
-<h3 id="posts-title" class="anchored">
-Posts
-</h3>
-<div id="listing-post-listing" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="RGF0YSUyMEVuZ2luZWVyaW5nJTJDUHl0aG9uJTJDU1FMJTJDQXBhY2hlJTIwQWlyZmxvdyUyQ2RidCUyQ0RvY2tlcg==" data-listing-date-sort="1786910400000" data-listing-file-modified-sort="1786977695091" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1363">
-<div class="thumbnail"><a href="./posts/marketvault.html" class="no-external">
-
-<p class="card-img-top"><img src="plots/marketvault_test_dashboard.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/marketvault.html" class="no-external">Building MarketVault: A Modern Data Engineering Stack for Financial Analytics</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/marketvault.html" class="no-external">An architectural breakdown of MarketVault, a containerized, end-to-end data pipeline built with Apache Airflow 3, PostgreSQL, dbt, and Apache Superset to ingest, transform, and visualize financial market data.</a>
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEVuZ2luZWVyaW5n'); return false;">Data Engineering</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U1FM'); return false;">SQL</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXBhY2hlJTIwQWlyZmxvdw=='); return false;">Apache Airflow</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('ZGJ0'); return false;">dbt</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RG9ja2Vy'); return false;">Docker</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/marketvault.html" class="no-external">
-In quantitative finance and data engineering, managing financial datasets requires more than just fetching prices via an API. To build reliable analytical models, you need a…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/marketvault.html" class="no-external">
-<div class="listing-date">
-Aug 17, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UGVyc29uYWwlMkNUcmF2ZWwlMkNSZWZsZWN0aW9uJTJDQnVja2V0LUxpc3Q=" data-listing-date-sort="1779998400000" data-listing-file-modified-sort="1780067174752" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="686">
-<div class="thumbnail"><a href="./posts/travel.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/travel.html" class="no-external">The Horizons I’m Chasing: My Ultimate Travel Bucket List</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/travel.html" class="no-external">A collection of the corners of the world I promise to see, and the stories drawing me to them.</a>
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UGVyc29uYWw='); return false;">Personal</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('VHJhdmVs'); return false;">Travel</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVmbGVjdGlvbg=='); return false;">Reflection</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QnVja2V0LUxpc3Q='); return false;">Bucket-List</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/travel.html" class="no-external">
-Of everything I will ever publish on this site, this post is perhaps the most personal and holds the dearest place in my heart. It is a roadmap of curiosity, a permanent…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/travel.html" class="no-external">
-<div class="listing-date">
-May 29, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="VW5kZXJncmFkJTJDRGF0YSUyMFNjaWVuY2UlMkNTdGF0aXN0aWNzJTJDQ29tcHV0ZXIlMjBTY2llbmNlJTJDUmVmbGVjdGlvbg==" data-listing-date-sort="1779912000000" data-listing-file-modified-sort="1779999303355" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="986">
-<div class="thumbnail"><a href="./posts/degree_outline.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/degree_outline.html" class="no-external">10 Courses That Shaped My Degree</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/degree_outline.html" class="no-external">Looking back at the math, stats, systems, and surprises that defined my undergrad journey.</a>
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('VW5kZXJncmFk'); return false;">Undergrad</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNjaWVuY2U='); return false;">Data Science</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGlzdGljcw=='); return false;">Statistics</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tcHV0ZXIlMjBTY2llbmNl'); return false;">Computer Science</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UmVmbGVjdGlvbg=='); return false;">Reflection</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/degree_outline.html" class="no-external">
-Heading into my sixth and final year, it’s strange to look back at the sheer variety of classrooms I’ve sat in. A quantitative degree often looks uniform on paper, an…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/degree_outline.html" class="no-external">
-<div class="listing-date">
-May 28, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="UXVhbnRpdGF0aXZlJTIwRmluYW5jZSUyQ1B5dGhvbiUyQ1N0YXRpc3RpY3M=" data-listing-date-sort="1778443200000" data-listing-file-modified-sort="1779989080080" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1164">
-<div class="thumbnail"><a href="./posts/dcf.html" class="no-external">
-
-<p class="card-img-top"><img src="plots/dcf_dashboard.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/dcf.html" class="no-external">Beyond the Price Target: A Reverse DCF Framework for Expectation Investing</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/dcf.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhbnRpdGF0aXZlJTIwRmluYW5jZQ=='); return false;">Quantitative Finance</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHl0aG9u'); return false;">Python</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U3RhdGlzdGljcw=='); return false;">Statistics</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/dcf.html" class="no-external">
-A Discounted Cash Flow (DCF) model is the “gold standard” of valuation. It operates on a simple premise: a company is worth the sum of all the cash it will ever make…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/dcf.html" class="no-external">
-<div class="listing-date">
-May 11, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="RGF0YSUyMEVuZ2luZWVyaW5nJTJDU3lzdGVtcyUyMEFyY2hpdGVjdHVyZSUyQ0hlYWx0aCUyMEluZm9ybWF0aWNz" data-listing-date-sort="1767211200000" data-listing-file-modified-sort="1779989085104" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="342">
-<div class="thumbnail"><a href="./posts/parquet_arrow.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/parquet_arrow.html" class="no-external">Why Parquet + Arrow Changed Our Ingestion Pipeline</a>
-</h3>
-<div class="listing-subtitle">
-<a href="./posts/parquet_arrow.html" class="no-external"></a>
-</div>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEVuZ2luZWVyaW5n'); return false;">Data Engineering</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('U3lzdGVtcyUyMEFyY2hpdGVjdHVyZQ=='); return false;">Systems Architecture</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('SGVhbHRoJTIwSW5mb3JtYXRpY3M='); return false;">Health Informatics</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/parquet_arrow.html" class="no-external">
-During my internship at Population Data BC, we faced a classic distributed systems problem: data ingestion and transformation pipelines processing massive, longitudinal…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/parquet_arrow.html" class="no-external">
-<div class="listing-date">
-Jan 1, 2026
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  function updateCount() {
-    // Attempt to read from Quarto's list.js instance if available
-    var lst = window['quarto-listings'] && window['quarto-listings']['listing-post-listing'];
-    var count = 0;
-    if (lst) {
-      count = lst.matchingItems.length;
-    } else {
-      // Fallback: count visible items in the DOM directly
-      var items = document.querySelectorAll('#listing-post-listing .quarto-post');
-      count = Array.from(items).filter(el => getComputedStyle(el).display !== 'none').length;
-    }
-    var title = document.getElementById('posts-title');
-    if (title) {
-      title.innerText = "Posts (" + count + ")";
-    }
-  }
-
-  // Hook into Quarto's loaded callback
-  var oldLoaded = window['quarto-listing-loaded'];
-  window['quarto-listing-loaded'] = function() {
-    if (oldLoaded) oldLoaded();
-    updateCount();
-    var lst = window['quarto-listings'] && window['quarto-listings']['listing-post-listing'];
-    if (lst) {
-      lst.on('updated', updateCount);
-    }
-  };
-
-  // Fallback observer in case Quarto's loaded event is missed
-  var observer = new MutationObserver(updateCount);
-  var listContainer = document.querySelector('#listing-post-listing');
-  if (listContainer) {
-    observer.observe(listContainer, { childList: true, subtree: true, attributes: true });
-  }
-
-  setTimeout(updateCount, 200);
-});
-</script>
+</section>
+<section id="architectural-overview" class="level2">
+<h2 class="anchored" data-anchor-id="architectural-overview">Architectural Overview</h2>
+<p>MarketVault is structured around a containerized microservice architecture managed via Docker Compose and container runtimes like Colima.</p>
+<pre><code>+------------------+      +-------------------+      +----------------------+
+|  Data Source     | ---&gt; | Orchestration     | ---&gt; | Storage &amp; Warehouse  |
+|  (yfinance API)  |      | (Airflow 3 &amp;      |      | (PostgreSQL          |
+|                  |      |  Celery Workers)  |      |  "stockdb")          |
++------------------+      +-------------------+      +----------------------+
+                                                                |
+                                                                v
+                                                     +----------------------+
+                                                     | Transformation Layer |
+                                                     | (dbt run &amp; test)     |
+                                                     +----------------------+
+                                                                |
+                                                                v
+                                                     +----------------------+
+                                                     | Analytics &amp; Dashboards|
+                                                     | (Apache Superset)    |
+                                                     +----------------------+
+</code></pre>
+<section id="key-infrastructure-components" class="level3">
+<h3 class="anchored" data-anchor-id="key-infrastructure-components">Key Infrastructure Components</h3>
+<ul>
+<li><strong>Airflow 3 Orchestration Stack</strong>: Uses an API server, scheduler, Celery workers backed by Redis, triggerer, and DAG processor to manage extraction and transformation workflows.</li>
+<li><strong>PostgreSQL Data Warehouse</strong>: Serves as the primary analytical target (<code>stockdb</code>) as well as the metadata backend for Airflow.</li>
+<li><strong>dbt Transformation Engine</strong>: Runs staging models (<code>stg_stock_prices</code>) and analytical aggregate models (<code>fct_daily_stock_metrics</code>) with built-in data assertions (<code>dbt test</code>).</li>
+<li><strong>Apache Superset</strong>: Pre-configured BI connection to the <code>stockdb</code> warehouse for visualization and dashboarding.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="core-pipeline-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="core-pipeline-workflow">Core Pipeline Workflow</h2>
+<p>The primary workflow follows an automated, test-driven ETL pipeline executed on schedule inside Airflow:</p>
+<ol type="1">
+<li><strong>Ingestion</strong>: Extracts daily ticker metrics and historical OHLCV data using <code>yfinance</code> into raw Postgres tables.</li>
+<li><strong>Transformation</strong>: Executes <code>dbt run</code> to clean, cast, and build analytical data models (staging views and daily fact tables).</li>
+<li><strong>Data Quality Assertions</strong>: Triggers <code>dbt test</code> to enforce constraint checks (uniqueness, non-null fields, and reference integrity) before downstream consumption.</li>
+</ol>
+<hr>
+</section>
+<section id="data-modeling-strategy" class="level2">
+<h2 class="anchored" data-anchor-id="data-modeling-strategy">Data Modeling Strategy</h2>
+<p>MarketVault organizes SQL transformations into dedicated layers within dbt:</p>
+<ul>
+<li><strong>Staging Layer (<code>stg_stock_prices</code>)</strong>: Normalizes column naming conventions, casts timestamp datatypes, standardizes currency scales, and removes corrupted ticker payloads.</li>
+<li><strong>Marts / Fact Layer (<code>fct_daily_stock_metrics</code>)</strong>: Computes analytical aggregates, lag features, percentage price changes, and rolling volatility metrics directly in the database.</li>
+</ul>
+<hr>
+</section>
+<section id="expanding-verticals-future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="expanding-verticals-future-directions">Expanding Verticals &amp; Future Directions</h2>
+<p>With the foundational pipeline and data warehouse operational, MarketVault can naturally expand across several adjacent engineering and quantitative verticals:</p>
+<section id="integrating-ai-machine-learning-workflows" class="level3">
+<h3 class="anchored" data-anchor-id="integrating-ai-machine-learning-workflows">1. Integrating AI &amp; Machine Learning Workflows</h3>
+<ul>
+<li><strong>Time-Series Forecasting</strong>: Ingest clean tabular metrics into machine learning pipelines (e.g., Chronos, XGBoost, or deep learning models) to forecast price trajectories and volatility bands.</li>
+<li><strong>Agentic Research &amp; RAG</strong>: Build a financial intelligence agent that pairs structured price data from PostgreSQL with unstructured data (earnings call transcripts, 10-K filings, news feeds) via retrieval-augmented generation (RAG) to generate automated equity research summaries.</li>
+<li><strong>Anomaly &amp; Regime-Change Detection</strong>: Implement statistical models to detect unusual trading volume spikes or market regime shifts in real time.</li>
+</ul>
+</section>
+<section id="alternative-data-verticals" class="level3">
+<h3 class="anchored" data-anchor-id="alternative-data-verticals">2. Alternative Data Verticals</h3>
+<ul>
+<li><strong>Macroeconomic &amp; Central Bank Data</strong>: Integrate APIs like FRED (Federal Reserve Economic Data) to track inflation, interest rates, and employment trends alongside asset prices.</li>
+<li><strong>Sentiment Feeds</strong>: Ingest real-time retail and institutional sentiment signals from social platforms and news wire APIs to analyze market momentum.</li>
+<li><strong>Cryptocurrency &amp; On-Chain Metrics</strong>: Expand connectors to ingest decentralized finance (DeFi) volume and on-chain blockchain transactions.</li>
+</ul>
+</section>
+<section id="advanced-streaming-lakehouse-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="advanced-streaming-lakehouse-architecture">3. Advanced Streaming &amp; Lakehouse Architecture</h3>
+<ul>
+<li><strong>Real-Time Event Streaming</strong>: Incorporate Apache Kafka or Redpanda alongside Airflow to handle sub-second streaming tick data.</li>
+<li><strong>Lakehouse Migration</strong>: Store high-volume raw tick histories using columnar formats like Apache Parquet with query engines like DuckDB or Apache Iceberg for cost-effective analytical scaling.</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="project-repository" class="level2">
+<h2 class="anchored" data-anchor-id="project-repository">Project Repository</h2>
+<p>The full codebase, Docker Compose configurations, and pipeline DAGs are available on GitHub:</p>
+<ul>
+<li><strong>GitHub Repository</strong>: <a href="https://github.com/kashish1928/MarketVault">kashish1928/MarketVault</a></li>
+</ul>
 
 
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blogs",
     "section": "",
-    "text": "While I do not intend to follow a niche, I’d occasionally write about:\n\nData engineering lessons from internships\nFinance\nCareer notes for students\nBook reviews\nShow recommendations\n\nI’ll try to keep stuff organized in groups!\n\n\nPosts\n\n\n\n\n\n\n\n\n\n\n\nThe Horizons I’m Chasing: My Ultimate Travel Bucket List\n\n\nA collection of the corners of the world I promise to see, and the stories drawing me to them.\n\n\n\nPersonal\n\nTravel\n\nReflection\n\nBucket-List\n\n\n\n\n\n\n\n\n\nMay 29, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n10 Courses That Shaped My Degree\n\n\nLooking back at the math, stats, systems, and surprises that defined my undergrad journey.\n\n\n\nUndergrad\n\nData Science\n\nStatistics\n\nComputer Science\n\nReflection\n\n\n\n\n\n\n\n\n\nMay 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBeyond the Price Target: A Reverse DCF Framework for Expectation Investing\n\n\n\n\n\n\nQuantitative Finance\n\nPython\n\nStatistics\n\n\n\n\n\n\n\n\n\nMay 11, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Parquet + Arrow Changed Our Ingestion Pipeline\n\n\n\n\n\n\nData Engineering\n\nSystems Architecture\n\nHealth Informatics\n\n\n\n\n\n\n\n\n\nJan 1, 2026\n\n\n\n\n\nNo matching items"
+    "text": "While I do not intend to follow a niche, I’d occasionally write about:\n\nData engineering lessons from internships\nFinance\nCareer notes for students\nBook reviews\nShow recommendations\n\nI’ll try to keep stuff organized in groups!\n\n\nPosts\n\n\n\n\n\n\n\n\n\n\n\nBuilding MarketVault: A Modern Data Engineering Stack for Financial Analytics\n\n\nAn architectural breakdown of MarketVault, a containerized, end-to-end data pipeline built with Apache Airflow 3, PostgreSQL, dbt, and Apache Superset to ingest, transform, and visualize financial market data.\n\n\n\nData Engineering\n\nPython\n\nSQL\n\nApache Airflow\n\ndbt\n\nDocker\n\n\n\n\n\n\n\n\n\nAug 17, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nThe Horizons I’m Chasing: My Ultimate Travel Bucket List\n\n\nA collection of the corners of the world I promise to see, and the stories drawing me to them.\n\n\n\nPersonal\n\nTravel\n\nReflection\n\nBucket-List\n\n\n\n\n\n\n\n\n\nMay 29, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n10 Courses That Shaped My Degree\n\n\nLooking back at the math, stats, systems, and surprises that defined my undergrad journey.\n\n\n\nUndergrad\n\nData Science\n\nStatistics\n\nComputer Science\n\nReflection\n\n\n\n\n\n\n\n\n\nMay 28, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nBeyond the Price Target: A Reverse DCF Framework for Expectation Investing\n\n\n\n\n\n\nQuantitative Finance\n\nPython\n\nStatistics\n\n\n\n\n\n\n\n\n\nMay 11, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nWhy Parquet + Arrow Changed Our Ingestion Pipeline\n\n\n\n\n\n\nData Engineering\n\nSystems Architecture\n\nHealth Informatics\n\n\n\n\n\n\n\n\n\nJan 1, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "experience.html",
@@ -257,5 +257,117 @@
     "title": "Skills",
     "section": "",
     "text": "Python — ETL pipelines, data analysis, testing\n\nSQL — analytics, warehousing, querying big datasets\n\nR — statistical workflows, data validation, reproducible analysis\nBash — scripting & automation\n\n\n\n\n\nApache Airflow — orchestrating workflows\n\nApache Spark — distributed data processing\n\ndbt — analytics engineering & transformations\n\nParquet & Arrow — high-performance data storage & in-memory analytics\n\nDuckDB — fast local analytics\n\n\n\n\n\nLlamaIndex — RAG & multi-agent system orchestration\n\nIntelligent Doc Processing — OCR & LLM-driven PDF analysis systems\n\nStatistical Modeling — Synthetic data generation (Poisson, Log-Normal, Normal)\n\nML Frameworks — PyTorch, SciPy, NumPy, Scikit-Learn\n\n\n\n\n\n\n\nBigQuery, Cloud Storage, Pub/Sub\n\nCloud Functions, Cloud Run, Composer\n\n\n\n\n\nS3, Redshift, Athena, IAM\n\n\n\n\n\n\nPostgreSQL, MongoDB, DuckDB, SQLite\n\nTableau — dashboards & visualization\n\nGrafana — monitoring & metrics\n\n\n\n\n\nCI/CD — GitHub Actions\n\nDocker — containerized workflows\n\nUnit testing & data validation\n\nData quality checks & reproducible pipelines"
+  },
+  {
+    "objectID": "posts/marketvault.html",
+    "href": "posts/marketvault.html",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "",
+    "text": "In quantitative finance and data engineering, managing financial datasets requires more than just fetching prices via an API. To build reliable analytical models, you need a robust, production-ready stack that handles scheduled ingestion, enforces data quality tests, modularizes data transformations, and serves dynamic dashboards.\nTo solve this, I built MarketVault—a modern, containerized data engineering pipeline and platform. MarketVault orchestrates market data ingestion (yfinance), handles analytical modeling via dbt, coordinates workflows using Apache Airflow 3, and presents analytics using Apache Superset.\n\n\n\nMarketvault example dashboard"
+  },
+  {
+    "objectID": "posts/marketvault.html#architectural-overview",
+    "href": "posts/marketvault.html#architectural-overview",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "Architectural Overview",
+    "text": "Architectural Overview\nMarketVault is structured around a containerized microservice architecture managed via Docker Compose and container runtimes like Colima.\n+------------------+      +-------------------+      +----------------------+\n|  Data Source     | ---&gt; | Orchestration     | ---&gt; | Storage & Warehouse  |\n|  (yfinance API)  |      | (Airflow 3 &      |      | (PostgreSQL          |\n|                  |      |  Celery Workers)  |      |  \"stockdb\")          |\n+------------------+      +-------------------+      +----------------------+\n                                                                |\n                                                                v\n                                                     +----------------------+\n                                                     | Transformation Layer |\n                                                     | (dbt run & test)     |\n                                                     +----------------------+\n                                                                |\n                                                                v\n                                                     +----------------------+\n                                                     | Analytics & Dashboards|\n                                                     | (Apache Superset)    |\n                                                     +----------------------+\n\n\nKey Infrastructure Components\n\nAirflow 3 Orchestration Stack: Uses an API server, scheduler, Celery workers backed by Redis, triggerer, and DAG processor to manage extraction and transformation workflows.\nPostgreSQL Data Warehouse: Serves as the primary analytical target (stockdb) as well as the metadata backend for Airflow.\ndbt Transformation Engine: Runs staging models (stg_stock_prices) and analytical aggregate models (fct_daily_stock_metrics) with built-in data assertions (dbt test).\nApache Superset: Pre-configured BI connection to the stockdb warehouse for visualization and dashboarding."
+  },
+  {
+    "objectID": "posts/marketvault.html#technical-features",
+    "href": "posts/marketvault.html#technical-features",
+    "title": "Building MarketVault: A Robust Financial Data Ingestion & Storage Pipeline",
+    "section": "Technical Features",
+    "text": "Technical Features\n\nMulti-Asset Support: Handles equities, ETF, and cryptocurrency price histories alongside fundamental metrics.\nRobust Error Handling: Handles API failures, missing data points, and intermittent connection drops smoothly with custom logging.\nOptimized Schema Design: Uses compound indexes on (symbol, timestamp) for fast range queries across multi-year asset histories.\nModular Extensibility: Adding a new market data vendor requires implementing a single abstract connector class."
+  },
+  {
+    "objectID": "posts/marketvault.html#technical-implementation-details",
+    "href": "posts/marketvault.html#technical-implementation-details",
+    "title": "Building MarketVault: A Robust Financial Data Ingestion & Storage Pipeline",
+    "section": "Technical Implementation Details",
+    "text": "Technical Implementation Details\n\n1. Standardized Connector Pattern\nMarketVault uses an abstract base connector pattern (BaseMarketConnector) to enforce a single consistent interface across all data sources. Every vendor connector must implement standard methods for fetching Open, High, Low, Close, Volume (OHLCV) payloads and executing schema validation:\n\nType Normalization: Guarantees timestamp formatting and datetime alignment across distinct time zones.\nPayload Verification: Ensures mandatory columns exist and discards malformed rows before data reaches the storage layer.\n\n\n\n2. Time-Series Persistence & Indexing\nFor storage, MarketVault relies on SQLAlchemy ORM abstraction over relational engines like PostgreSQL or SQLite. Primary keys are synthesized dynamically ({symbol}_{timestamp}), and compound indexes are established on (symbol, timestamp) to maximize query throughput for time-series range extraction."
+  },
+  {
+    "objectID": "posts/marketvault.html#analytics-practical-applications",
+    "href": "posts/marketvault.html#analytics-practical-applications",
+    "title": "Building MarketVault: A Robust Financial Data Ingestion & Storage Pipeline",
+    "section": "Analytics & Practical Applications",
+    "text": "Analytics & Practical Applications\nOnce the data is ingested and normalized within MarketVault, executing downstream quantitative tasks becomes simple:\n\nValuation Models: Feeding clean historical price & fundamental data directly into discounted cash flow (DCF) or valuation dashboards.\nVolatilities & Signals: Calculating rolling metrics like historical volatility, logarithmic returns, and technical indicators (e.g., SMA, EMA, RSI).\nData Integrity Audit: Running automated checks for data gaps or trading day anomalies."
+  },
+  {
+    "objectID": "posts/marketvault.html#roadmap-next-steps",
+    "href": "posts/marketvault.html#roadmap-next-steps",
+    "title": "Building MarketVault: A Robust Financial Data Ingestion & Storage Pipeline",
+    "section": "Roadmap & Next Steps",
+    "text": "Roadmap & Next Steps\n\nAsynchronous Fetching: Implementing asyncio / aiohttp for concurrent multi-ticker ingestion.\nContainerization: Packaging the ETL worker with Docker and Docker Compose.\nOrchestration: Adding Apache Airflow / Prefect DAGs for scheduled nightly pipeline runs.\nDashboard Integration: Building an interactive Streamlit / Quarto dashboard interface for fast visualization."
+  },
+  {
+    "objectID": "posts/marketvault.html#project-repository",
+    "href": "posts/marketvault.html#project-repository",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "Project Repository",
+    "text": "Project Repository\nThe full codebase, Docker Compose configurations, and pipeline DAGs are available on GitHub:\n\nGitHub Repository: kashish1928/MarketVault"
+  },
+  {
+    "objectID": "posts/marketvault.html#introduction",
+    "href": "posts/marketvault.html#introduction",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "",
+    "text": "In quantitative finance and data engineering, managing financial datasets requires more than just fetching prices via an API. To build reliable analytical models, you need a robust, production-ready stack that handles scheduled ingestion, enforces data quality tests, modularizes data transformations, and serves dynamic dashboards.\nTo solve this, I built MarketVault—a modern, containerized data engineering pipeline and platform. MarketVault orchestrates market data ingestion (yfinance), handles analytical modeling via dbt, coordinates workflows using Apache Airflow 3, and presents analytics using Apache Superset.\n\n\n\nMarketvault example dashboard"
+  },
+  {
+    "objectID": "posts/marketvault.html#core-pipeline-workflow-marketvault_etl_dag",
+    "href": "posts/marketvault.html#core-pipeline-workflow-marketvault_etl_dag",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "Core Pipeline Workflow (marketvault_etl_dag)",
+    "text": "Core Pipeline Workflow (marketvault_etl_dag)\nThe primary workflow follows an automated, test-driven ETL pipeline executed on schedule inside Airflow:\n\nIngestion: Extracts daily ticker metrics and historical OHLCV data using yfinance into raw Postgres tables.\nTransformation: Executes dbt run to clean, cast, and build analytical data models (such as staging views and daily fact tables).\nData Quality Assertions: Triggers dbt test to enforce constraint checks (uniqueness, non-null fields, and reference integrity) before analytical consumption."
+  },
+  {
+    "objectID": "posts/marketvault.html#technical-features-stack",
+    "href": "posts/marketvault.html#technical-features-stack",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "Technical Features & Stack",
+    "text": "Technical Features & Stack\n\nContainerized Microservices: Orchestrates 9 services including PostgreSQL, Redis, Apache Superset, and the Airflow 3 suite via docker-compose.\nModular Data Modeling: Leverages dbt for modular SQL transformations, keeping raw staging layers separate from business-level fact tables.\nAutomated Quality Checks: Enforces schema validation and data quality assertions directly within the DAG execution flow.\nDeveloper Workflow Automation: Uses a Makefile wrapper to streamline environment initialization, database CLI connections (make psql), container builds, and dbt runs."
+  },
+  {
+    "objectID": "posts/marketvault.html#data-transformation-layer-dbt",
+    "href": "posts/marketvault.html#data-transformation-layer-dbt",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "Data Transformation Layer (dbt)",
+    "text": "Data Transformation Layer (dbt)\n\nStaging & Fact Models\nMarketVault transforms raw market payloads into structured analytical tables using dbt models:\n-- models/staging/stg_stock_prices.sql\nwith raw_source as (\n    select * from {{ source('stockdb', 'raw_stock_prices') }}\n)\nselect\n    symbol,\n    date::date as metric_date,\n    open::numeric(10,2) as open_price,\n    high::numeric(10,2) as high_price,\n    low::numeric(10,2) as low_price,\n    close::numeric(10,2) as close_price,\n    volume::bigint as trading_volume\nfrom raw_source\n-- models/marts/fct_daily_stock_metrics.sql\nselect\n    symbol,\n    metric_date,\n    close_price,\n    trading_volume,\n    lag(close_price, 1) over (partition by symbol order by metric_date) as prev_close,\n    (close_price - lag(close_price, 1) over (partition by symbol order by metric_date)) / \n        nullif(lag(close_price, 1) over (partition by symbol order by metric_date), 0) as daily_return\nfrom {{ ref('stg_stock_prices') }}"
+  },
+  {
+    "objectID": "posts/marketvault.html#analytics-visualizations",
+    "href": "posts/marketvault.html#analytics-visualizations",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "Analytics & Visualizations",
+    "text": "Analytics & Visualizations\nWith PostgreSQL linked directly to Apache Superset, downstream consumers can immediately:\n\nBuild time-series trend charts for individual tickers and indices.\nMonitor daily trading returns and volume spikes via pre-configured dashboard cards.\nValidate metrics using automated database verification scripts (postgres/test_postgres.py)."
+  },
+  {
+    "objectID": "posts/marketvault.html#roadmap-future-enhancements",
+    "href": "posts/marketvault.html#roadmap-future-enhancements",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "Roadmap & Future Enhancements",
+    "text": "Roadmap & Future Enhancements\n\nStreaming Data Ingestion: Integrating Apache Kafka or Redpanda for real-time intra-day price streaming.\nCI/CD Integration: Expanding GitHub Actions workflows to run automated dbt test assertions on every pull request.\nAdvanced Financial Marts: Adding technical indicator calculations (RSI, Bollinger Bands, Moving Averages) directly into dbt models."
+  },
+  {
+    "objectID": "posts/marketvault.html#core-pipeline-workflow",
+    "href": "posts/marketvault.html#core-pipeline-workflow",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "Core Pipeline Workflow",
+    "text": "Core Pipeline Workflow\nThe primary workflow follows an automated, test-driven ETL pipeline executed on schedule inside Airflow:\n\nIngestion: Extracts daily ticker metrics and historical OHLCV data using yfinance into raw Postgres tables.\nTransformation: Executes dbt run to clean, cast, and build analytical data models (staging views and daily fact tables).\nData Quality Assertions: Triggers dbt test to enforce constraint checks (uniqueness, non-null fields, and reference integrity) before downstream consumption."
+  },
+  {
+    "objectID": "posts/marketvault.html#data-modeling-strategy",
+    "href": "posts/marketvault.html#data-modeling-strategy",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "Data Modeling Strategy",
+    "text": "Data Modeling Strategy\nMarketVault organizes SQL transformations into dedicated layers within dbt:\n\nStaging Layer (stg_stock_prices): Normalizes column naming conventions, casts timestamp datatypes, standardizes currency scales, and removes corrupted ticker payloads.\nMarts / Fact Layer (fct_daily_stock_metrics): Computes analytical aggregates, lag features, percentage price changes, and rolling volatility metrics directly in the database."
+  },
+  {
+    "objectID": "posts/marketvault.html#expanding-verticals-future-directions",
+    "href": "posts/marketvault.html#expanding-verticals-future-directions",
+    "title": "Building MarketVault: A Modern Data Engineering Stack for Financial Analytics",
+    "section": "Expanding Verticals & Future Directions",
+    "text": "Expanding Verticals & Future Directions\nWith the foundational pipeline and data warehouse operational, MarketVault can naturally expand across several adjacent engineering and quantitative verticals:\n\n1. Integrating AI & Machine Learning Workflows\n\nTime-Series Forecasting: Ingest clean tabular metrics into machine learning pipelines (e.g., Chronos, XGBoost, or deep learning models) to forecast price trajectories and volatility bands.\nAgentic Research & RAG: Build a financial intelligence agent that pairs structured price data from PostgreSQL with unstructured data (earnings call transcripts, 10-K filings, news feeds) via retrieval-augmented generation (RAG) to generate automated equity research summaries.\nAnomaly & Regime-Change Detection: Implement statistical models to detect unusual trading volume spikes or market regime shifts in real time.\n\n\n\n2. Alternative Data Verticals\n\nMacroeconomic & Central Bank Data: Integrate APIs like FRED (Federal Reserve Economic Data) to track inflation, interest rates, and employment trends alongside asset prices.\nSentiment Feeds: Ingest real-time retail and institutional sentiment signals from social platforms and news wire APIs to analyze market momentum.\nCryptocurrency & On-Chain Metrics: Expand connectors to ingest decentralized finance (DeFi) volume and on-chain blockchain transactions.\n\n\n\n3. Advanced Streaming & Lakehouse Architecture\n\nReal-Time Event Streaming: Incorporate Apache Kafka or Redpanda alongside Airflow to handle sub-second streaming tick data.\nLakehouse Migration: Store high-volume raw tick histories using columnar formats like Apache Parquet with query engines like DuckDB or Apache Iceberg for cost-effective analytical scaling."
   }
 ]
